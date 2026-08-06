@@ -1,8 +1,21 @@
+
+import { eq } from "drizzle-orm";
 import { db } from "../db/client";
-import { properties, districts } from "../db/schema";
+import { properties, districts, orgs } from "../db/schema";
 import { embedText } from "../lib/gemini";
+
+const ORG_SLUG = "easy-real-estate";
+
 async function seed() {
+  const [org] = await db.select().from(orgs).where(eq(orgs.slug, ORG_SLUG));
+  if (!org) {
+    throw new Error(
+      `Org with slug "${ORG_SLUG}" not found — insert it first (see Step 2 of the org_id migration).`,
+    );
+  }
+
   const [lakeside] = await db.insert(districts).values({
+    orgId: org.id,
     name: "Lakeside",
     city: "Pokhara",
     description: "Tourist hub with high rental demand and lakeside land.",
@@ -29,7 +42,12 @@ async function seed() {
 
   for (const p of sample) {
     const embedding = await embedText(`${p.title}. ${p.description}`);
-    await db.insert(properties).values({ ...p, districtId: lakeside.id, embedding });
+    await db.insert(properties).values({
+      ...p,
+      orgId: org.id,
+      districtId: lakeside.id,
+      embedding,
+    });
     console.log(`Inserted: ${p.title}`);
   }
 }

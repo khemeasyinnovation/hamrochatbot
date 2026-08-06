@@ -1,57 +1,131 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse} from "next/server";
+import { streamText, convertToModelMessages, generateText } from "ai";
+import { google } from "@ai-sdk/google";
 import { db } from "@/db/client";
-import { embedText, askGemini } from "@/lib/gemini";
+import { embedText } from "@/lib/gemini";
+import { orgs } from "@/db/schema";
+import { eq } from "drizzle-orm";
 import { sql } from "drizzle-orm";
 
-const SYSTEM_INSTRUCTION = `You are the official real estate assistant for our company, specializing in properties in Kaski district (Pokhara and surrounding areas).
+const MODEL_CANDIDATES = ["gemini-3.1-flash-lite", "gemini-3.5-flash"];
+const DEFAULT_ORG_SLUG = "easy-real-estate"; // your own dashboard's org
+
+let cachedModel: string | null = null;
+let cachedAt = 0;
+const CACHE_MS = 30 * 60 * 1000;
+
+async function resolveModel(): Promise<string> {
+  if (cachedModel && Date.now() - cachedAt < CACHE_MS) {
+    return cachedModel;
+  }
+  for (const modelId of MODEL_CANDIDATES) {
+    try {
+      await generateText({ model: google(modelId), prompt: "ping", maxOutputTokens: 1 });
+      console.log(`[chat route] Using model: ${modelId}`);
+      cachedModel = modelId;
+      cachedAt = Date.now();
+      return modelId;
+    } catch {
+      console.error(`[chat route] ${modelId} unavailable, trying next candidate`);
+    }
+  }
+  throw new Error("All candidate Gemini models are currently unavailable.");
+}
+
+const SYSTEM_INSTRUCTION = `You are the official real estate assistant for Easy Real Estate, specializing in properties in Kaski district (Pokhara and surrounding areas).
 
 RULES:
 1. ONLY answer questions about real estate, land, prices, districts/neighborhoods, or the properties in the provided context.
-2. If asked something off-topic (coding, general trivia, unrelated advice, etc.), politely decline: "I can only help with real estate and property questions for our listings."
-3. Never invent prices, property details, or availability. If the context below doesn't contain relevant properties, say: "I couldn't find matching properties in our current listings. Would you like me to check other areas or criteria?"
-4. Keep answers concise and structured.`;
+2. If asked something off-topic, politely decline: "I can only help with real estate and property questions for our listings."
+3. Never invent prices or property details. If context doesn't contain relevant info, say so and offer to check other areas.
+4. Keep answers concise and structured.
+5. NEVER output raw JSON, code blocks, or data structures. Always write in natural conversational sentences or simple markdown lists/tables meant for a chat widget — never technical formats.
+6. Keep tables narrow: at most 3 short columns, since they render in a small chat panel.`;
 
 export async function POST(req: NextRequest) {
-  const { message } = await req.json();
+  try {
+    const { messages, orgSlug } = await req.json();
+    const slug = orgSlug || DEFAULT_ORG_SLUG;
 
-  const queryEmbedding = await embedText(message);
-  const vectorParam = JSON.stringify(queryEmbedding);
+    const [org] = await db.select().from(orgs).where(eq(orgs.slug, slug));
+    if (!org) {
+      return NextResponse.json({ error: "Unknown organization." }, { status: 404 });
+    }
 
-  // Search structured property listings
-  const propertyResults = await db.execute(sql`
-    select title, address, price, land_area, description
-    from properties
-    order by embedding <=> ${vectorParam}::vector
-    limit 5
-  `);
+    const lastMessage = messages[messages.length - 1];
+    const userQuestion =
+      lastMessage?.parts
+        ?.filter((p: any) => p.type === "text")
+        .map((p: any) => p.text)
+        .join(" ")
+        .trim() ||
+      lastMessage?.content ||
+      "";
 
-  // Search general knowledge (district guides, FAQs)
-  const knowledgeResults = await db.execute(sql`
-    select title, content
-    from knowledge_chunks
-    order by embedding <=> ${vectorParam}::vector
-    limit 3
-  `);
+    if (!userQuestion) {
+      console.error("[chat route] Empty user question extracted from:", JSON.stringify(lastMessage));
+    }
 
-  const propertyContext = propertyResults.rows
-    .map((r: any) => `- ${r.title}: ${r.address}, ${r.land_area} land, price ${r.price}. ${r.description}`)
-    .join("\n");
+    const [queryEmbedding, modelId] = await Promise.all([
+      embedText(userQuestion),
+      resolveModel(),
+    ]);
+    const vectorParam = JSON.stringify(queryEmbedding);
 
-  const knowledgeContext = knowledgeResults.rows
-    .map((r: any) => `- ${r.title}: ${r.content}`)
-    .join("\n");
+    const [propertyResults, knowledgeResults] = await Promise.all([
+      db.execute(sql`
+        select title, address, price, land_area, description
+        from properties
+        where org_id = ${org.id}
+        order by embedding <=> ${vectorParam}::vector
+        limit 5
+      `),
+      db.execute(sql`
+        select title, content
+        from knowledge_chunks
+        where org_id = ${org.id}
+        order by embedding <=> ${vectorParam}::vector
+        limit 3
+      `),
+    ]);
 
-  const prompt = `${SYSTEM_INSTRUCTION}
+    const propertyContext = propertyResults.rows
+      .map((r: any) => `- ${r.title}: ${r.address}, ${r.land_area} land, price ${r.price}. ${r.description}`)
+      .join("\n");
+
+    const knowledgeContext = knowledgeResults.rows
+      .map((r: any) => `- ${r.title}: ${r.content}`)
+      .join("\n");
+
+    const modelMessages = await convertToModelMessages(messages);
+
+    const result = streamText({
+      model: google(modelId),
+      system: `${SYSTEM_INSTRUCTION}
 
 Available properties:
 ${propertyContext || "No matching properties found."}
 
 General knowledge:
-${knowledgeContext || "No relevant knowledge found."}
+${knowledgeContext || "No relevant knowledge found."}`,
+      messages: modelMessages,
+      onError: ({ error }) => {
+        console.error("[chat route] Stream error, invalidating model cache:", error);
+        cachedModel = null;
+      },
+      onFinish: ({ finishReason, text }) => {
+        if (!text || finishReason === "content-filter") {
+          console.error("[chat route] Empty or filtered completion. finishReason:", finishReason, "userQuestion was:", userQuestion);
+        }
+      },
+    });
 
-User question: ${message}`;
-
-  const answer = await askGemini(prompt);
-
-  return NextResponse.json({ answer });
+    return result.toUIMessageStreamResponse();
+  } catch (err) {
+    console.error("[chat route] Fatal error:", err);
+    return new Response(
+      JSON.stringify({ error: "Something went wrong processing your request." }),
+      { status: 500, headers: { "Content-Type": "application/json" } },
+    );
+  }
 }

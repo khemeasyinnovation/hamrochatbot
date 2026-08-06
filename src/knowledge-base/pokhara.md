@@ -13,3 +13,7 @@ Mahendrapool is closer to Pokhara's city center, offering a mix of residential a
 # Buying Land in Nepal - FAQ
 
 Foreign nationals generally cannot directly own land in Nepal; land ownership is restricted to Nepali citizens except in specific investment cases. Buyers should verify land ownership documents (lalpurja) and confirm the property is free of disputes before purchase. A registered lawyer or land broker is typically involved in the transaction and registration process.
+
+# Contact Us
+
+You can reach Easy Real Estate through our website's Contact Us page, or visit our office in Pokhara. Our team typically responds within 2 hours during business hours. For property inquiries, book a site visit or request a callback through the property listing page.
