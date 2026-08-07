@@ -1,23 +1,20 @@
-import { NextRequest, NextResponse} from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { streamText, convertToModelMessages, generateText } from "ai";
 import { google } from "@ai-sdk/google";
 import { db } from "@/db/client";
 import { embedText } from "@/lib/gemini";
 import { orgs } from "@/db/schema";
-import { eq } from "drizzle-orm";
-import { sql } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 
 const MODEL_CANDIDATES = ["gemini-3.1-flash-lite", "gemini-3.5-flash"];
-const DEFAULT_ORG_SLUG = "easy-real-estate"; // your own dashboard's org
+const DEFAULT_ORG_SLUG = "easy-real-estate";
 
 let cachedModel: string | null = null;
 let cachedAt = 0;
 const CACHE_MS = 30 * 60 * 1000;
 
 async function resolveModel(): Promise<string> {
-  if (cachedModel && Date.now() - cachedAt < CACHE_MS) {
-    return cachedModel;
-  }
+  if (cachedModel && Date.now() - cachedAt < CACHE_MS) return cachedModel;
   for (const modelId of MODEL_CANDIDATES) {
     try {
       await generateText({ model: google(modelId), prompt: "ping", maxOutputTokens: 1 });
@@ -32,24 +29,41 @@ async function resolveModel(): Promise<string> {
   throw new Error("All candidate Gemini models are currently unavailable.");
 }
 
-const SYSTEM_INSTRUCTION = `You are the official real estate assistant for Easy Real Estate, specializing in properties in Kaski district (Pokhara and surrounding areas).
+function buildSystemInstruction(orgName: string, businessDescription: string | null): string {
+  const description =
+    businessDescription?.trim() ||
+    `a business named "${orgName}". No detailed business description has been provided yet.`;
+
+  return `You are the official AI assistant for ${orgName}.
+
+About this business: ${description}
 
 RULES:
-1. ONLY answer questions about real estate, land, prices, districts/neighborhoods, or the properties in the provided context.
-2. If asked something off-topic, politely decline: "I can only help with real estate and property questions for our listings."
-3. Never invent prices or property details. If context doesn't contain relevant info, say so and offer to check other areas.
+1. ONLY answer questions relevant to this business, based on the information and context provided below.
+2. If asked something off-topic or unrelated to this business, politely decline: "I can only help with questions about ${orgName}."
+3. Never invent facts, prices, or details. If the provided context doesn't contain relevant info, say so honestly.
 4. Keep answers concise and structured.
 5. NEVER output raw JSON, code blocks, or data structures. Always write in natural conversational sentences or simple markdown lists/tables meant for a chat widget — never technical formats.
 6. Keep tables narrow: at most 3 short columns, since they render in a small chat panel.`;
+}
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages, orgSlug } = await req.json();
+    const { messages, orgSlug, embedKey } = await req.json();
     const slug = orgSlug || DEFAULT_ORG_SLUG;
 
     const [org] = await db.select().from(orgs).where(eq(orgs.slug, slug));
     if (!org) {
       return NextResponse.json({ error: "Unknown organization." }, { status: 404 });
+    }
+
+    // Widget traffic (any org other than the dashboard's own default) must
+    // present the matching secret embed key. Mode 1 never sends orgSlug,
+    // so it always uses the default and skips this check.
+    if (orgSlug && orgSlug !== DEFAULT_ORG_SLUG) {
+      if (!embedKey || embedKey !== org.embedKey) {
+        return NextResponse.json({ error: "Invalid or missing embed key" }, { status: 403 });
+      }
     }
 
     const lastMessage = messages[messages.length - 1];
@@ -66,10 +80,7 @@ export async function POST(req: NextRequest) {
       console.error("[chat route] Empty user question extracted from:", JSON.stringify(lastMessage));
     }
 
-    const [queryEmbedding, modelId] = await Promise.all([
-      embedText(userQuestion),
-      resolveModel(),
-    ]);
+    const [queryEmbedding, modelId] = await Promise.all([embedText(userQuestion), resolveModel()]);
     const vectorParam = JSON.stringify(queryEmbedding);
 
     const [propertyResults, knowledgeResults] = await Promise.all([
@@ -101,7 +112,7 @@ export async function POST(req: NextRequest) {
 
     const result = streamText({
       model: google(modelId),
-      system: `${SYSTEM_INSTRUCTION}
+      system: `${buildSystemInstruction(org.name, org.businessDescription)}
 
 Available properties:
 ${propertyContext || "No matching properties found."}
@@ -115,7 +126,7 @@ ${knowledgeContext || "No relevant knowledge found."}`,
       },
       onFinish: ({ finishReason, text }) => {
         if (!text || finishReason === "content-filter") {
-          console.error("[chat route] Empty or filtered completion. finishReason:", finishReason, "userQuestion was:", userQuestion);
+          console.error("[chat route] Empty or filtered completion. finishReason:", finishReason);
         }
       },
     });

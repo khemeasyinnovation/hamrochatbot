@@ -2,17 +2,27 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useChat } from "@ai-sdk/react";
+import { DefaultChatTransport } from "ai";
 import { ApiMessage } from "@/lib/chatApi";
 import { AssistantBubble } from "./AssistantBubble";
 
 export function ChatPanel({
   initialMessages,
   onTurnComplete,
+  orgSlug,
+  embedKey,
 }: {
   initialMessages: ApiMessage[];
   onTurnComplete: (msgs: ApiMessage[]) => void;
+  orgSlug?: string;
+   embedKey?: string | null;
 }) {
-  const { messages, setMessages, sendMessage, status } = useChat();
+  const { messages, setMessages, sendMessage, status } = useChat({
+    transport: new DefaultChatTransport({
+      api: "/api/chat",
+      body: orgSlug ? { orgSlug, embedKey } : undefined,
+    }),
+  });
   const [input, setInput] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
