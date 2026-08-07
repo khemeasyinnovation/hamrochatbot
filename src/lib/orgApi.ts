@@ -1,10 +1,10 @@
-
 export type Org = {
   id: string;
   name: string;
   slug: string;
   embedKey: string;
   allowedDomains: string[] | null;
+  isPaid: boolean;
 };
 
 export const updateAllowedDomains = (allowedDomains: string[]) =>
@@ -31,7 +31,3 @@ export const createOrg = (name: string) =>
     if (!r.ok) throw new Error(data.error || "Failed to create business");
     return data.org as Org;
   });
-
-
-
- 
