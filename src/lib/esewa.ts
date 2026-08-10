@@ -2,7 +2,7 @@ import crypto from "crypto";
 
 // UAT sandbox defaults (from eSewa's own developer docs) — override via env vars
 // once you get real production merchant credentials later.
-const ESEWA_SECRET_KEY = process.env.ESEWA_SECRET_KEY || "8gBm/:&EnhH.1/q(";
+const ESEWA_SECRET_KEY = process.env.ESEWA_SECRET_KEY || "8gBm/:&EnhH.1/q";
 export const ESEWA_PRODUCT_CODE = process.env.ESEWA_PRODUCT_CODE || "EPAYTEST";
 
 export const ESEWA_FORM_URL = "https://rc-epay.esewa.com.np/api/epay/main/v2/form";
@@ -18,10 +18,20 @@ export function generateEsewaSignature(
   transactionUuid: string,
   productCode: string,
 ): string {
+  console.log("SECRET:", ESEWA_SECRET_KEY);
+  console.log("PRODUCT:", ESEWA_PRODUCT_CODE);
+
   const message = `total_amount=${totalAmount},transaction_uuid=${transactionUuid},product_code=${productCode}`;
+
   const hmac = crypto.createHmac("sha256", ESEWA_SECRET_KEY);
   hmac.update(message);
-  return hmac.digest("base64");
+
+  const signature = hmac.digest("base64");
+
+  console.log("MESSAGE:", message);
+  console.log("SIGNATURE:", signature);
+
+  return signature;
 }
 
 /**

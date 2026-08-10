@@ -15,7 +15,7 @@ export function ChatPanel({
   initialMessages: ApiMessage[];
   onTurnComplete: (msgs: ApiMessage[]) => void;
   orgSlug?: string;
-   embedKey?: string | null;
+  embedKey?: string | null;
 }) {
   const { messages, setMessages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({
@@ -52,8 +52,6 @@ export function ChatPanel({
     onTurnComplete(messages as unknown as ApiMessage[]);
   }, [messages, loading, onTurnComplete]);
 
-  // Remember whether the user is currently near the bottom. If they've
-  // scrolled up to read older messages, auto-scroll should back off.
   function handleScroll() {
     const el = scrollRef.current;
     if (!el) return;
@@ -61,9 +59,6 @@ export function ChatPanel({
     stickToBottomRef.current = distanceFromBottom < 80;
   }
 
-  // Watches the message list's real rendered height, not just the messages
-  // array -- this is what catches the typewriter effect growing text after
-  // the array itself has already stopped changing.
   useEffect(() => {
     const container = scrollRef.current;
     const content = contentRef.current;
@@ -78,7 +73,6 @@ export function ChatPanel({
     return () => observer.disconnect();
   }, []);
 
-  // Snap to bottom on first load / session switch.
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
@@ -106,12 +100,12 @@ export function ChatPanel({
       <div
         ref={scrollRef}
         onScroll={handleScroll}
-        className="flex-1 overflow-y-auto px-4 py-3 bg-slate-50 min-h-0"
+        className="flex-1 overflow-y-auto px-4 py-3 bg-[#EEF2F0] min-h-0"
       >
         <div ref={contentRef} className="space-y-3">
           {messages.length === 0 && (
             <p className="text-slate-400 text-sm text-center mt-10">
-              Ask about properties, districts, or prices in Kaski.
+              Ask about Queries or concerns.
             </p>
           )}
 
@@ -129,7 +123,7 @@ export function ChatPanel({
                 {msg.role === "assistant" ? (
                   <AssistantBubble text={text} animate={isNew} />
                 ) : (
-                  <div className="max-w-[85%] px-4 py-2 rounded-2xl text-sm leading-relaxed bg-[#0b2545] text-white rounded-br-sm">
+                  <div className="max-w-[85%] px-4 py-2 rounded-2xl text-sm leading-relaxed bg-[#123A3E] text-white rounded-br-sm">
                     <span>{text}</span>
                   </div>
                 )}
@@ -157,12 +151,12 @@ export function ChatPanel({
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Type your question..."
-          className="flex-1 px-4 py-2 rounded-full border border-slate-300 text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0b2545]"
+          className="flex-1 px-4 py-2 rounded-full border border-slate-300 text-sm text-[#1F2E33] bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#123A3E]"
         />
         <button
           onClick={handleSend}
           disabled={loading}
-          className="px-5 py-2 rounded-full bg-[#0b2545] text-white text-sm font-medium disabled:opacity-50 hover:opacity-90 transition"
+          className="px-5 py-2 rounded-full bg-[#B5502A] text-white text-sm font-medium disabled:opacity-50 hover:bg-[#9C4322] transition"
         >
           Send
         </button>

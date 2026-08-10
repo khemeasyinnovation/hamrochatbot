@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SiteWidgetLoader } from "@/components/chat/SiteWidgetLoader";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,10 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "REAL CHATBOT",
+  title: "HamroBot",
   description: "Made by next app",
   icons: {
-    icon: "/globe.svg", 
+    icon: "/globe.svg",
   },
 };
 
@@ -24,7 +25,6 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
 };
-
 
 export default function RootLayout({
   children,
@@ -36,7 +36,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <SiteWidgetLoader />
+      </body>
     </html>
   );
 }

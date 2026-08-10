@@ -15,6 +15,8 @@ export const orgs = pgTable("orgs", {
   name: text("name").notNull(),
   slug: text("slug").notNull().unique(),
   embedKey: text("embed_key").notNull().unique(),
+  widgetColor: text("widget_color"), // e.g. "#123A3E", nullable
+  widgetPosition: text("widget_position"), // "bottom-right" | "bottom-left", nullable
   businessDescription: text("business_description"),
   allowedDomains: text("allowed_domains").array(),
   isPaid: boolean("is_paid").notNull().default(false),

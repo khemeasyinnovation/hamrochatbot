@@ -14,46 +14,68 @@ function extractHostname(url: string | null): string | null {
 }
 
 function isDomainAllowed(hostname: string | null, allowedDomains: string[] | null): boolean {
-  if (!allowedDomains || allowedDomains.length === 0) return true; // no restriction configured yet
-  if (!hostname) return false; // domains ARE configured but we couldn't tell who's asking — fail closed
+  if (!allowedDomains || allowedDomains.length === 0) return true;
+  if (!hostname) return false;
   return allowedDomains.some((d) => hostname === d || hostname.endsWith(`.${d}`));
+}
+
+function Shell({ children }: { children: React.ReactNode }) {
+  return <div className="h-dvh w-full bg-white flex flex-col">{children}</div>;
 }
 
 export default async function EmbedPage({
   searchParams,
 }: {
-  searchParams: Promise<{ org?: string; key?: string; user?: string }>;
+  searchParams: Promise<{ org?: string; key?: string; user?: string; layout?: string; path?: string }>;
 }) {
-  const { org: orgSlug, key: embedKey, user: explicitVisitorId } = await searchParams;
+  const { org: orgSlug, key: embedKey, user: explicitVisitorId, layout, path } = await searchParams;
 
   if (!orgSlug) {
-    return <div className="p-4 text-sm text-slate-500">Missing required "org" parameter.</div>;
+    return (
+      <Shell>
+        <div className="p-4 text-sm text-slate-500">Missing required "org" parameter.</div>
+      </Shell>
+    );
   }
 
   const [org] = await db.select().from(orgs).where(eq(orgs.slug, orgSlug));
   if (!org) {
-    return <div className="p-4 text-sm text-slate-500">Unknown organization.</div>;
+    return (
+      <Shell>
+        <div className="p-4 text-sm text-slate-500">Unknown organization.</div>
+      </Shell>
+    );
   }
 
   if (!embedKey || embedKey !== org.embedKey) {
-    return <div className="p-4 text-sm text-red-500">Invalid or missing embed key.</div>;
+    return (
+      <Shell>
+        <div className="p-4 text-sm text-red-500">Invalid or missing embed key.</div>
+      </Shell>
+    );
   }
 
   const referer = (await headers()).get("referer");
   const hostname = extractHostname(referer);
   if (!isDomainAllowed(hostname, org.allowedDomains)) {
     return (
-      <div className="p-4 text-sm text-red-500">
-        This chatbot isn't authorized for this website.
-      </div>
+      <Shell>
+        <div className="p-4 text-sm text-red-500">
+          This chatbot isn't authorized for this website.
+        </div>
+      </Shell>
     );
   }
 
   return (
-    <EmbedChatWidget
-      orgSlug={orgSlug}
-      embedKey={embedKey}
-      explicitVisitorId={explicitVisitorId ?? null}
-    />
+    <Shell>
+      <EmbedChatWidget
+        orgSlug={orgSlug}
+        embedKey={embedKey}
+        explicitVisitorId={explicitVisitorId ?? null}
+        isMobileHost={layout === "mobile"}
+        hostPath={path ?? null}
+      />
+    </Shell>
   );
 }

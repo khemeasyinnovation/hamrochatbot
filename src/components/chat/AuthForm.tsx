@@ -22,7 +22,6 @@ export function AuthForm({ onAuthed }: { onAuthed: (user: ApiUser) => void }) {
         onAuthed(user as ApiUser);
         return;
       }
-
       const result = await signup(email, password);
       if ("needsConfirmation" in result) {
         setInfo(`Check ${result.email} for a confirmation link, then log in below.`);
@@ -38,13 +37,13 @@ export function AuthForm({ onAuthed }: { onAuthed: (user: ApiUser) => void }) {
   }
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center bg-slate-50 px-6">
-      <form onSubmit={handleSubmit} className="w-full max-w-xs space-y-3">
-        <p className="text-center font-semibold text-[#0b2545] text-sm mb-2">
+    <div className="flex-1 flex  flex-col items-center justify-center bg-[#EEF2F0] px-6">
+      <form onSubmit={handleSubmit} className="w-full px-2 py-4 bg-gradient-to-r from-blue-400 to-purple-300 border  border-slate-300 border-m-3 rounded-lg m-4 h-74 max-w-xs space-y-3">
+        <p className="text-center font-semibold text-white text-sm m-4">
           {mode === "login" ? "Log in to chat" : "Create an account"}
         </p>
 
-        {info && <p className="text-xs text-slate-500 text-center">{info}</p>}
+        {info && <p className="text-xs text-slate-500  text-center">{info}</p>}
 
         <input
           type="email"
@@ -52,7 +51,7 @@ export function AuthForm({ onAuthed }: { onAuthed: (user: ApiUser) => void }) {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0b2545]"
+          className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm text-[#1F2E33] bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#123A3E]"
         />
         <input
           type="password"
@@ -60,7 +59,7 @@ export function AuthForm({ onAuthed }: { onAuthed: (user: ApiUser) => void }) {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0b2545]"
+          className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm text-[#1F2E33] bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#123A3E]"
         />
 
         {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -68,7 +67,7 @@ export function AuthForm({ onAuthed }: { onAuthed: (user: ApiUser) => void }) {
         <button
           type="submit"
           disabled={busy}
-          className="w-full py-2 rounded-lg bg-[#0b2545] text-white text-sm font-medium disabled:opacity-50"
+          className="w-full py-2 rounded-lg bg-[#123A3E] text-white text-sm font-medium disabled:opacity-50 hover:bg-[#0D2E31] transition"
         >
           {busy ? "Please wait..." : mode === "login" ? "Log in" : "Sign up"}
         </button>
@@ -80,7 +79,7 @@ export function AuthForm({ onAuthed }: { onAuthed: (user: ApiUser) => void }) {
             setError("");
             setInfo("");
           }}
-          className="w-full text-xs text-slate-500 hover:text-[#0b2545]"
+          className="w-full text-xs text-blue-900 hover:text-[#123A3E]"
         >
           {mode === "login" ? "No account? Sign up" : "Have an account? Log in"}
         </button>

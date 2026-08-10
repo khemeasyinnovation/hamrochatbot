@@ -1,5 +1,12 @@
-import ChatWidget from "@/components/chat/ChatWidget";
+import { redirect } from "next/navigation";
+import { getCurrentUserId } from "@/lib/auth";
 
-export default function Page() {
-  return <ChatWidget />;
+export default async function HomePage() {
+  const userId = await getCurrentUserId();
+
+  if (userId) {
+    redirect("/dashboard");
+  }
+
+  redirect("/login");
 }

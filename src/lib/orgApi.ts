@@ -5,6 +5,8 @@ export type Org = {
   embedKey: string;
   allowedDomains: string[] | null;
   isPaid: boolean;
+  widgetColor: string | null;
+  widgetPosition: string | null;
 };
 
 export const updateAllowedDomains = (allowedDomains: string[]) =>
@@ -29,5 +31,16 @@ export const createOrg = (name: string) =>
   }).then(async (r) => {
     const data = await r.json();
     if (!r.ok) throw new Error(data.error || "Failed to create business");
+    return data.org as Org;
+  });
+
+  export const updateWidgetAppearance = (widgetColor: string, widgetPosition: string) =>
+  fetch("/api/orgs", {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ widgetColor, widgetPosition }),
+  }).then(async (r) => {
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.error || "Failed to save appearance");
     return data.org as Org;
   });

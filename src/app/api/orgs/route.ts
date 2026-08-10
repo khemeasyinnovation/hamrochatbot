@@ -57,8 +57,6 @@ export async function POST(req: Request) {
   return NextResponse.json({ org });
 }
 
-
-
 export async function PATCH(req: Request) {
   const userId = await getCurrentUserId();
   if (!userId) return NextResponse.json({ error: "Not logged in" }, { status: 401 });
@@ -66,20 +64,26 @@ export async function PATCH(req: Request) {
   const [org] = await db.select().from(orgs).where(eq(orgs.ownerUserId, userId));
   if (!org) return NextResponse.json({ error: "No business found" }, { status: 404 });
 
-  const { allowedDomains } = await req.json();
-  if (!Array.isArray(allowedDomains)) {
-    return NextResponse.json({ error: "allowedDomains must be an array" }, { status: 400 });
+  const { allowedDomains, widgetColor, widgetPosition } = await req.json();
+
+  const updates: Partial<typeof orgs.$inferInsert> = {};
+
+  if (Array.isArray(allowedDomains)) {
+    updates.allowedDomains = allowedDomains
+      .map((d: string) => d.trim().toLowerCase().replace(/^https?:\/\//, "").replace(/\/$/, ""))
+      .filter(Boolean);
   }
 
-  const cleaned = allowedDomains
-    .map((d: string) => d.trim().toLowerCase().replace(/^https?:\/\//, "").replace(/\/$/, ""))
-    .filter(Boolean);
+  if (typeof widgetColor === "string") {
+    const validHex = /^#[0-9a-fA-F]{6}$/.test(widgetColor);
+    if (!validHex) return NextResponse.json({ error: "Color must be a hex code like #123A3E" }, { status: 400 });
+    updates.widgetColor = widgetColor;
+  }
 
-  const [updated] = await db
-    .update(orgs)
-    .set({ allowedDomains: cleaned })
-    .where(eq(orgs.id, org.id))
-    .returning();
+  if (widgetPosition === "bottom-left" || widgetPosition === "bottom-right") {
+    updates.widgetPosition = widgetPosition;
+  }
 
+  const [updated] = await db.update(orgs).set(updates).where(eq(orgs.id, org.id)).returning();
   return NextResponse.json({ org: updated });
 }

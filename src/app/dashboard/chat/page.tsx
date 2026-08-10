@@ -1,5 +1,6 @@
-import ChatWidget from "@/components/chat/ChatWidget";
+
+import { DashboardChatView } from "@/components/chat/DashboardChatView";
 
 export default function DashboardChatPage() {
-  return <ChatWidget />;
+  return <DashboardChatView />;
 }

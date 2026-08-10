@@ -26,7 +26,7 @@ export function ConfirmDialog({
           </button>
           <button
             onClick={onConfirm}
-            className="px-4 py-1.5 rounded-lg text-sm text-white bg-[#0b2545] hover:opacity-90 transition"
+            className="px-4 py-1.5 rounded-lg text-sm text-white bg-[#B5502A] hover:bg-[#9C4322] transition"
           >
             Delete
           </button>
