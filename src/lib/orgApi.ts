@@ -7,6 +7,8 @@ export type Org = {
   isPaid: boolean;
   widgetColor: string | null;
   widgetPosition: string | null;
+  businessDescription: string | null;
+  knowledgeCount?: number;
 };
 
 export const updateAllowedDomains = (allowedDomains: string[]) =>
@@ -21,7 +23,11 @@ export const updateAllowedDomains = (allowedDomains: string[]) =>
   });
 
 export const fetchMyOrg = () =>
-  fetch("/api/orgs").then((r) => r.json()).then((d) => d.org as Org | null);
+  fetch("/api/orgs").then(async (r) => {
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.error || "Failed to load your business");
+    return data.org as Org | null;
+  });
 
 export const createOrg = (name: string) =>
   fetch("/api/orgs", {

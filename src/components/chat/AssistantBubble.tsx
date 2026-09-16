@@ -48,7 +48,7 @@ export function AssistantBubble({
   const stillTyping = animate && displayed.length < text.length;
 
   return (
-    <div className="max-w-[85%] px-4 py-2 rounded-2xl text-sm leading-relaxed bg-white text-slate-800 border border-slate-200 rounded-bl-sm shadow-sm">
+    <div className="max-w-[85%] min-w-0 overflow-x-auto [overflow-wrap:anywhere] px-4 py-2 rounded-2xl text-sm leading-relaxed bg-white text-slate-800 border border-slate-200 rounded-bl-sm shadow-sm">
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
         {displayed || "\u200b"}
       </ReactMarkdown>

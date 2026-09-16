@@ -41,7 +41,7 @@ async function seed() {
   ];
 
   for (const p of sample) {
-    const embedding = await embedText(`${p.title}. ${p.description}`);
+    const embedding = await embedText(`${p.title}. ${p.description}`, { orgId: org.id, userId: org.ownerUserId, surface: "ingestion", task: "embedding" });
     await db.insert(properties).values({
       ...p,
       orgId: org.id,

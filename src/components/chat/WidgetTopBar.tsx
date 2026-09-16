@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { RobotMark } from "./RobotMark";
 import { Settings } from "lucide-react";
 
 export function WidgetTopBar({
@@ -11,7 +12,6 @@ export function WidgetTopBar({
   historyOpen,
   onToggleHistory,
   onClose,
-  isOwner,
   widgetPosition,
   onTogglePosition,
 }: {
@@ -31,11 +31,13 @@ export function WidgetTopBar({
   return (
     <div className="flex items-center justify-between px-3 py-2 border-b border-slate-200 bg-white shrink-0 relative">
       <div className="flex items-center gap-1">
+        <RobotMark className="shrink-0 rounded-lg bg-[var(--widget-color,#123A3E)] text-[var(--widget-foreground,#ffffff)]" />
         {showExpandToggle && (
           <button
             onClick={onToggleExpand}
+            aria-label={expanded ? "Collapse chat" : "Expand chat"}
             title={expanded ? "Collapse" : "Expand"}
-            className="w-7 h-7 flex items-center justify-center rounded-md text-[#123A3E] hover:bg-[#123A3E]/10 transition"
+            className="w-9 h-9 flex items-center justify-center rounded-md text-[#123A3E] hover:bg-[#123A3E]/10 transition"
           >
             {expanded ? (
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -65,8 +67,9 @@ export function WidgetTopBar({
         {onTogglePosition && (
   <button
     onClick={onTogglePosition}
+    aria-label="Switch launcher side"
     title="Switch launcher side"
-    className="w-7 h-7 flex items-center justify-center rounded-md text-[#123A3E] hover:bg-[#123A3E]/10 transition"
+    className="w-9 h-9 flex items-center justify-center rounded-md text-[#123A3E] hover:bg-[#123A3E]/10 transition"
   >
     {widgetPosition === "bottom-left" ? (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -82,8 +85,10 @@ export function WidgetTopBar({
 
         <div className="relative">
           <button
+            aria-label="Widget menu"
+            aria-expanded={menuOpen}
             onClick={() => setMenuOpen((v) => !v)}
-            className="w-7 h-7 flex items-center justify-center rounded-md text-[#123A3E] hover:bg-[#123A3E]/10 transition"
+            className="w-9 h-9 flex items-center justify-center rounded-md text-[#123A3E] hover:bg-[#123A3E]/10 transition"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M4 6h16M4 12h16M4 18h16" />
@@ -105,8 +110,9 @@ export function WidgetTopBar({
 
         <button
           onClick={onClose}
+          aria-label="Close chat"
           title="Close"
-          className="w-7 h-7 flex items-center justify-center rounded-md text-[#123A3E] hover:bg-[#123A3E]/10 transition"
+          className="w-9 h-9 flex items-center justify-center rounded-md text-[#123A3E] hover:bg-[#123A3E]/10 transition"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M6 6L18 18M6 18L18 6" strokeLinecap="round" />

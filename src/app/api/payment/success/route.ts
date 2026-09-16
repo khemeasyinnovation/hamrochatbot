@@ -20,28 +20,33 @@ export async function GET(req: Request) {
     return NextResponse.redirect(`${appUrl}/dashboard/payment?status=failure`);
   }
 
-  if (!verifyEsewaSignature(payload)) {
-    console.error("[esewa] signature verification failed", payload);
+  if (!payload || !verifyEsewaSignature(payload) || payload.product_code !== ESEWA_PRODUCT_CODE || payload.status !== "COMPLETE") {
+    console.error("[esewa] callback verification failed");
+    return NextResponse.redirect(`${appUrl}/dashboard/payment?status=failure`);
+  }
+
+  const [existing] = await db.select().from(paymentTransactions)
+    .where(eq(paymentTransactions.transactionUuid, payload.transaction_uuid));
+  const paidAmount = Number(String(payload.total_amount).replace(/,/g, ""));
+  if (!existing || !Number.isFinite(paidAmount) || paidAmount !== Number(existing.amount)) {
     return NextResponse.redirect(`${appUrl}/dashboard/payment?status=failure`);
   }
 
   // Defense in depth: eSewa's own docs say never trust the redirect alone —
   // confirm independently via their server-to-server status API.
-  const statusResult = await checkEsewaStatus(
-    payload.product_code || ESEWA_PRODUCT_CODE,
-    payload.total_amount,
-    payload.transaction_uuid,
-  );
-
-  if (statusResult.status !== "COMPLETE") {
-    await db
-      .update(paymentTransactions)
-      .set({ status: statusResult.status || "FAILED", updatedAt: new Date() })
-      .where(eq(paymentTransactions.transactionUuid, payload.transaction_uuid));
+  let statusResult;
+  try {
+    statusResult = await checkEsewaStatus(ESEWA_PRODUCT_CODE, existing.amount, existing.transactionUuid);
+  } catch {
     return NextResponse.redirect(`${appUrl}/dashboard/payment?status=failure`);
   }
 
-  const [txn] = await db
+  if (statusResult.status !== "COMPLETE") {
+    return NextResponse.redirect(`${appUrl}/dashboard/payment?status=failure`);
+  }
+
+  await db.transaction(async tx => {
+  const [txn] = await tx
     .update(paymentTransactions)
     .set({
       status: "COMPLETE",
@@ -52,8 +57,9 @@ export async function GET(req: Request) {
     .returning();
 
   if (txn) {
-    await db.update(orgs).set({ isPaid: true }).where(eq(orgs.id, txn.orgId));
+    await tx.update(orgs).set({ isPaid: true }).where(eq(orgs.id, txn.orgId));
   }
+  });
 
   return NextResponse.redirect(`${appUrl}/dashboard/payment?status=success`);
 }

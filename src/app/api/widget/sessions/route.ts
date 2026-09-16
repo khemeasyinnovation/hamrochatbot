@@ -2,13 +2,12 @@ import { NextResponse, NextRequest } from "next/server";
 import { db } from "@/db/client";
 import { widgetSessions, orgs } from "@/db/schema";
 import { eq, and, desc } from "drizzle-orm";
+import { widgetAccessError } from "@/lib/widgetAccess";
 
 async function verifyOrg(orgSlug: string, embedKey: string | null) {
   const [org] = await db.select().from(orgs).where(eq(orgs.slug, orgSlug));
-  if (!org) return { error: "Unknown organization", status: 404 } as const;
-  if (!embedKey || embedKey !== org.embedKey) {
-    return { error: "Invalid or missing embed key", status: 403 } as const;
-  }
+  const error = widgetAccessError(org, embedKey);
+  if (error) return error;
   return { org } as const;
 }
 

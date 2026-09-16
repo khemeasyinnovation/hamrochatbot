@@ -1,0 +1,920 @@
+%PDF-1.4
+%���� ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 5 0 R /F4 7 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 27 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Symbol /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 28 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+8 0 obj
+<<
+/Contents 29 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Contents 30 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/Contents 31 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/Contents 32 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/Contents 33 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+13 0 obj
+<<
+/Contents 34 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+14 0 obj
+<<
+/Contents 35 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+15 0 obj
+<<
+/Contents 36 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+16 0 obj
+<<
+/Contents 37 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+17 0 obj
+<<
+/Contents 38 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+18 0 obj
+<<
+/Contents 39 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+19 0 obj
+<<
+/Contents 40 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+20 0 obj
+<<
+/Contents 41 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+21 0 obj
+<<
+/Contents 42 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+22 0 obj
+<<
+/Contents 43 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+23 0 obj
+<<
+/Contents 44 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+24 0 obj
+<<
+/PageMode /UseNone /Pages 26 0 R /Type /Catalog
+>>
+endobj
+25 0 obj
+<<
+/Author (HamRobot) /CreationDate (D:20260811053116+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260811053116+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (HamRobot Master Architecture & Implementation Guide) /Trapped /False
+>>
+endobj
+26 0 obj
+<<
+/Count 18 /Kids [ 4 0 R 6 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 
+  16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R ] /Type /Pages
+>>
+endobj
+27 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1732
+>>
+stream
+Gatn&8TWWE'S,ZM(%9XL;],d)CcoiXa*!liNM88YR9gR6[Zu`E92\@Rn,'m("@^I.dTC"9GQcn"@:MRm_lE0*$?38#o+qfPLW(i!5m/`F_W<!<2^1`0/Cm(FVU?;(#u(gC0Y`Kg+:M\u,R.^D.$Ih$$;tP(NDc<`$ZDf[J9LdK=&6>Ll@Hn(*tZ8U<YFsb2h3b\H7PKt/e`l4;jdKo9]t)aXG"?Vf'mEWPW";"^:N3dG#dsO$U;IMqQRB,h3H0(PO7:C^KK<`@IXpFc^agHL?&C\McJZS+3Q_R//[m]1ZF1G`\#FL0sOQBamfk`#i>Y=8eorE!l;6aM8*;'C6PEc.7iX=q$R\Fb$*"pd[5n`U8Yp&M_uhip1f%tEO0=a4R9bc4<A]<R_Ybn?,e0&<&AogG.'J!:=fq%hd2/G^9L1uNb+TuYCagXdF2C?_O)TBZmI0Hhp(>NY89&hMqS$nZ?^nAI5RWKY&@Xubnogan)ft-j#nuT3)1-M,b,kgilQA-7Q)8@ZD<=*OijU>4(:lF*2,>e*Kaao'!:)nC1;L-T1--8=GL5%8ul()T?"'*"+oL1g("c/B/=/H(`joYk^c]#&nBp(ADB>CB&tjFhJRL\>73m.cW:mf>:B)kH/G)FDgKE73sQD"Q>pu=Ng/'8**[$Dq!o;c<0h#l75]@_jo;!!-k6Mf3ec\56_8_3CFGPFSLpaI^FWG4D#34(q:at0G^dCYceiZlfF^;XqqZRdDeq.^fer[/o@Xk-V`)fj!u,=\/FD8%g.!rF=<=!Ho8CA$I\/r8=8RAD*i;bGfbPUF#@!Dr/9bl'bVk+"[A.C#jT4kq-:N=d)+i7pq#Bkp<H,o'#!R5RU`BeBgT@fo.WrQHg(Vr>B@(9beXKJo=)0+G-^VGI;'N!@3Zs8:^5qY+O`i?F,%9>@Ce1:ck1K1+`J=m2-@ghNj;YVZi$+>?C2>D!\=2^d]J??Ph9"FBOqi<%)r%<rjX&D,UReA!c9%#VC$Ssoj.s2i7eb<LZR==N2lUPp.9<pLXhb]*BT1N^gkKqB@$*oKID4Tn>M85'nH_^u#\Pj:^fiVXhXDj6XUNZlE-7pX.k_Q*28(sq/298On2;Yb/>esj0B5H?Wh@f^[l*\>`4dQLBPeuaqq?]jE.RTfX(U]&o$4(Kh.g3g9%p5\9_b&>[Q_6jBu9/AN9%mV0r.H50%"?+<*MK"a`-%_+*(T<r0)i\\.Ve76kPaVOid\@$,K?V7F6"@L9e;q\shYH\a-;#R<l0BA0ZN;MmfEVYmb@<Z@Fhdl^4@Jg?8fZCkO])TT'Co@m/PuO>[m$`WFjrO#G^eN?6L0UC&gIQ*deDB[`o@]>]X3['ceK#MY%4B"Ne6[lm!%DnDQ\]ufetL>1]HUR12QR"6f+MqQ.mb6.ALolT(,]jBUb6;NZ8Vao+_"8#8m`_aO#n[pEHJZ`$SK-EDL'&g7-p^=9`"g&7t01)JI6MF0cJ\6''6I3:!.a\9Cq?NeY[S[WhWPPX\C6RT"m,53Wn:XbEf^'0`9i7Ou^)8mn!h;FTS/q]+T)_WI!2oiUE,l(@3<G]j!2g%:W=e(\#]P(iS/q[.HbekhE&mto#JfRFE2j/53X/=`^r[Z+*2e$]P^&3f+`[1_XN#+J_(I7--1>6bVf(t.TL<3o:S)1g[+i7nqE$(nXt@5q0[]16nu'_?G7BB8X`'H1rS>190eTVD_9kt;Xfp3a]sYE,XmFHC!M]So4<WWt~>endstream
+endobj
+28 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3239
+>>
+stream
+Gb!l`8TWWI&qKHI'n)P@UhlJ"(QaiLK=<h/,dnr@Q("^sTh.f7$b+0qNrT&75S=2Ob&XqZ_o*9_`7!l26T77D0_'q>hdHk2\qK*f":0_C$A`QOYl"bCbLp5Y_m:q(0eb_%3h?S2Du-&>_r>^&JaF>no6_'"gG"K%*([oNR:1EE41$;Q46mYi6GBA9)jC[!?s)tA(cEP]FeDut$)CKtX[7k1*T+cf.3,u2dRAVWfC0#R$pFhpbtC#F_bFD-Y\m&CItN#M,Wt0k*Ro)#_.=9Mr#`0@':*RTo%Ful[F$bQ*NsGrX>s*o`b4q"RUUJU0p`_j0L8KD[jKT-.>D$CguESmLbJ*R9U@Nh!<`9m*W2]kqUS0;iIDbaQ=k=XKJi%EQ"NTgI%Al/E1_)O1^U?Tg?AA]2n=sFl*G^o$m<hO;+oe&4J00'6qoqeXko^In^GKDB[.#^U-ZE4l)k-71T9rta5Df@dgl(G_mFdo8Ib[;K.P=!e&/.P%%#Ug(bUd!`Yt_8Y^"$d(*0cQ>)lLK]WAEnM`n[V/2")kH^%RK:Ra>C+iki5o5#/..?F0>TVc&c#:).c<ER98*+BU\6'2:Q`ZnsuPp30om,c@Knm\5[C@k(pPkbEB+GrhI%1)tT/_/):*&?;K@1pMXe1iCt&3U'o(0>Xd;bsEf3knpi/EbVdHW3uYY02WfW+eBJX*`?mcdXOl0#YP8>]91&4C`WQ3/OK9SQbbchVBdP()Qk`m06pF/!;lNlf8A)\`.22(P-5A(/9rWSCKWQ%F376Gg+@7\rpN$ru;"<q,7(./Gc<RE&qfEnL.:Q-IpI(`m(A=:`H]-O>lIpL(8FWi=6n%W5BZ;kbs.-*M1aU=`g^"5mM/:XZ&\`HKb5j5>-_\3P.h*T+!*RV;o+@4_.4CG>0F^D#5RH5It+a;Y9dH/ELB2/kmd;a?@H]V4M*u%r?j(g9lb(?o5.b[Ah@=.</Vm=nOSe1)tk+/0Io>8'.oqHuP?<&X5SEn3glOh8KE^m*!4<H#m)PY^TTBCrj1V/41=t0OI+rlp'tb06#D%=EiqY$)bip?9sjS]\[%.QRNQV8r_^=eWt#-h`?S"WWjGE6'R.af_BF3=#p+5bTiWd^r<dOA"p(a]\b-NGmDk5QM^;+:2R<Pk,=`D;IQ.4>c\0]FqQJUgsU$m/;^fr:2"iOs!`,XfBk1.AK>d\r2T^lNL\j5C;<Sj*S8`ur+TPF5!]V#g5`o6X,oX"/]/Kg@D`R7&t=1b_1=_KF^^O=77=-_2`qOKn3n`oF2f:&6QXi6+3I>+kQT3[qgFo_i4OS&j%sRo;6isZa.getU@R+&9bmoodourQgQ[+FVL-$0AMs<*CJ=d&=gPmQ=[mohbpLdoD(9Phm@qEQr!5_Ng?'YUj8(hGY^Q*>$on43o`r;1OVbm:BS/:1'dZZ9##bV9R7s3^esI@*N(TMtO=tU\ju$>[^V^=hrFVpai(5306d00l-:Xpn-G6j;3eS#Hrg7ZSq,$/)2:$LTOgMNU$(`=k/r6PslHDS$ILfnro,G18:!"nl5&e:X+(0\]X#uO0+818qkF:BQc:bP:'[@J<kD-ikq."rX#cc-t*[%.)Uqgg\5G7[L,qY2KodXn'`9T"_9[2"X];AF-D9J\DhU:iSE8-VX+QRbV/bWgYbBHhWU`t6;m7XQ^I<UGNO8CGIq5rY!Fqg]ie^\nsCt+N5O30H$gk8+Y#Lu%)W[J;C6m%q9K">_slQ&MdD[gRD[Pc]f-'mf$aYI"HWsY'&Lj0aZW_&IC:_Z#?"g"GiQgoB#+'%$;]G$6\;RFS46%cqW!ea*f,QrolE50GY/GaoW4d9Erb<S`9q<.2W0H6G[PDaG$a7MNGR'o9eFbeq"eZN[E2,2!Y9l95k;i5YJoPhucGbV$F(k+Yg+oGnqkoQVU-E=<moC\PBLb%PIfj8IE1e`M\Z;_Q#]r=[HWHEKm4A+V:r%4ugq/RnFBjP8#]fCRD*TII53Y[GkLO&k6@8$3J-bF</lF,J6Rg'aBi`&"5mP*Pt1%Wr&RimaLOl'5bZoo=Nfkh;UmdZ#EEK)jG+i_FM1#2?2.Icr!Mq!;b<40R2k\9Btld7HBa\m0gF$-kjd:WE*J;)_9\>>7*o7E8gFutNZR"OV,d>B,$lf/8gHTY8a4jFqB#:TnCM,n1aeR]uo&8tQLrHfhig<Ohfh_L]Z<K23tnd&0FR/&4e..FQ*HV3n,Jqk2<TC:#84eXGYK:;ZM75kb#EL5agna8X:K0$0Xs5U8UnfU([0O8QX4CKU5n;+%c%raWL^E!-#Ho'dZ/IJ5]s#t*]I&Dt6kZ/3]^LbkPZD(\hm!Wf(2dsV3dB?Y&<R#mTNr_'4k%5r8r4Pnr_(h>#`&eoLQA&>Ye6\n(#\Sd"R;LT0=`UZ[6RFt/jsk)`,OHneQtcq)%J>h,]#@X,3Ckr]`PS%"C*YUA=0DESje4H"D.]\a?90]\7tL@[M(+O8?6mpj/o)8eBtQMhp6S7^(AhAHp)Vb+Xj6CD=IS1%D56(3pAiY/GdAc`e&k/SHaNB8hhI`p*.sUq0%FQ\DEj!re9$Q(iqH1cg2&[g;JjJ[ogCCuV)s*)PR`_2$IPH.)'3^aVbb,3TENF+9MM=88kJp0WN:dF<p?2P6$rE<,L15'rL9$-EOMPf0c\e6J8E\Rqrlk]0<\c4V'id8$pDRH/V#kPjO<,boQgfk2`H'@GK1OKqSot?XW=^HhI^s!l/%UfD\lndhe)6r.q5eAp4ojt'3LD(/BJZnA.)$cJL-l&P&=]BD...<YdCjDZns>5L*[jK8OcgFk?&?+9CdL5P5SKd<2cTiH1q5J$3+a996`kXEDV*)ARpBJZ@anf5oJ?A)4@.Vr$5j&lWU;eVV3lL<1@@9D^2-gptZdX138%&F,MfZ72Zt?7^a`j)J,d8RAj,^<0EIpQ$X[s.btcQL,+@H0IEN%C7'F;T3kn1d),3-Ml_d$a7LD9<OhjJ+$m$Rm*-RrUtR]]Hu&c7*k0PL+2Nq2i5R*_@p?IJ/_nt]DB@8;okc9#FMQ-K8pZO\;6l#O1uP7":]i"?HtU>b3iF<DA'].))K+mXj6#'M:L$ktV6.@!c7e'.O)F.D(SJk8DdM_70m0sN'mXVI4LTl)2F/D=5ouL<O8UVTc3/F<"F89.H-R1Nc3/F\"F9DNH#/C$2Bn3!PK,NN>`Cji7%Q1YcZr9WUQOa;@e((V#;61(8(5O@]=V?TJ%AatQ]'>Iq=4U'$XU>qJ"FLC^WJ"*/H~>endstream
+endobj
+29 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2562
+>>
+stream
+Gau0E=``=W&q9SYkbfk(7\Y,LlR+'"]\4@cZ'CcHRVY\a,V1+9#Rs$kpAXpe!:$3t4-:kP%iujE^;"PB4`^)Yfjd2nH9%k])im+R`])t4:.XDhF?Vnaqnu(D^^Ccqd_q-nPaotB;E(DPMj'%8eFCsD9.:,ef8GfJjqNN+j/-h/)_:1LA5+1$l_iM!*Bu:%P7uRjE^J)FieZ+69^pV,DQ3E&j%!70flQHWS'A.t7+V"P9+lQsFNkPkWI-%-T%At]oFm5HMiuD3<O5lMMCofEn=OFmRDplgq$rD*%j>'e5GW;@VOW7`N8L:jm?DS7<YB`h"SSK[UG+Y#P;"0c>4Wu/r=GF@*m*K+V(d;WPF!/`pjpga06$.*a/c94%qGIsq[*3b@l9h7$!h<bbC\P7@&D,m<_J8g3q86$b`BULB$5Q="6[bO6I0UL)(%,Za!#TR/;\(KDkX_2(FQ@k[Un1(L21)4h`Ac30$KJf<_LXE,Ie!FRAPE5faZ@(9A'Cpg.Lh'CTJL[q-Po%92Y4l`Cq`7kS\DcWR5eQ4'kSO$U$R;9+,e]X(j;,X;JY@N)SR]"U?3Z=Hk"JrBt>!n`WG#<FJB;)UC+I.%,L>,JU:)V=CK['mu*/CF]S7F.Qe;5PY6eILUY^1NL/;eoCTfg5/NH3@V(Rk*YTG@dd%d<*#O7'DK>IgO6F"c;RC7p.1l]2i^h?lSm^<b3OGpkNl>=mcXkXj6c%oO#L0h"b2P<J-O$R'S2![l9^W86N]pb&V[LEarD^p!dB+h_G]gkNBe$1ehJqtoK*<i;W:gVHeu*--e22FVk,=5,Zb^^+#R+Egf/+8qkVDIg*](VnDZ%7n'e)[n7A_/F.FhdW3*h=ZBQkG]U!Uc.fJO[qf&N-Ald+jB/M?fl;'WK[2H[N$H0XkH*-tN:iaBP/NBnO/%I-T1$,TN9m*L@ZiG:PS`?PuY0JYSMs1jN.+N4?*,op-L;4)G0R)u*#F&FG:bY&%8>Z`?KkJ#C.fi85RI0sj\\HlRb%8!A9&$l']+l+Jh>m(JYtD@X5$[\anNebhSCVVo@(B6jhSX?gV!C"tmBC5uDpsZnX@mUf$j()H>nBVO830<2`jh\59k(k<SFhahR.'&4rTM/_YHuF"?Z49j+C6XRP*OSDOt"3oV84OeKs.fpoN0B2(4XmCImoO=4.[^oQjfm?/h5g&EQqTcP].9T(knocVq1Nq8iArYc3mR2OD5AOIlX7]G]I&*)$5j!I_%i;:0;s,aMG/IG2P3D"YV%(L@6p+?==9Ffqu+HScYRhW$(7HV?s!WM=a(PB=S$*.s?tQ<Zlr*C[.<Urdq(A6m>\7`W'g86u#DKP=6BYpUi[T$A@#l%*t976tJ(NG)V/YGWbX^Kk%k7i71R1j81>T9]G+&aff,[ig6n>dO,Jc:ZS(KCg^9<.'JLo/I+6Ys&=9sR(+CnVA6GVZZ-CN'mtQk%)?QO7\^F(hZu)(0Lir.4eAIQedts)]J6:7E4_Wlb_`)/<W+TIE-XlTQ6!bakT5fPem#4E'EA;A:R[^fblhT+%4tOG,_2Vg0+iH5(iTZ,L]_*?oR:V6CifN`6SQTAQmUSI_te*Mn(d-Ke1*%_81&PZh(AE)Q+4T7K(Oj:nZ7o(rELP"8t!$V)J,<;etp^pQR#7dM>A8a68PV,!G]:o#2oZcAqL;!joL(P7neb@>V?)'-;WE]&jQHLaAF[dm_)g)228Xm9=E1qL\"E4dm?AjP<o_Ui2J;4F=l\8Ig=t(&0<P\[KUq\Se"LU2j,`rK>]]R+oAOD.G3r%llT9uVsUkM"NJ-O$(nK!J=%q>*[%*4"e77#"`9H2f/.`df0I%=;((>qVR5g@gWeT+IY-(u)_$]Y'!%YD586i#/F>_a3FW3'DAI'*1oE-o6%Bak:he\pbSW)]/6r1l`92pULi"g!Msk^4AY]]NC<d/-2dNmGCcY)K0Y#cmm)uPWh(6.G2m!i7P*^#WF%S;gk0<RPdFgRT2--g?,FNnn@[FP<HptqrBq2HQ7K%ap*Kd$E2M[dS)U_,[:(Cuk5XNOSeLl-K_Vg5AfP$(QLio]bLFgb_K0hnl7,(l`Ro.?gr_,gQ"-Fs)SYG8=#jf?MgLUAlfcJAiI*sEA.MmuE%`)u]#B+4`-MY$(]jpJEa8F6V"DZ\%.nlB["L`c,@'apHY^,5Nl\J)PE2nK:16(.MhO\51WI.1f'%9IQ>G0LF)YK-$_0t*fq1U`O(<^OMkq$/3?$';-qt#<]NU>in2oAA+Cj!MP'4bf@/<SQi)gam.aC$oK6RYlh:)[!\L[>2WLB7>OI77K!%#P/8<gG]Ok_DrE<A/(.Cg+]Q$b5U;J#s*70NZ]00IF(Hk[q)]W\')i?07aG'Z5P>9URd>WWlM+/"S?BR/Z$NKbfF1ar5P@T$Jn98^i%@9%\UW=B"L'7.(e;N`)rbG:8CfGBu9g7KN"TA[qq#M-?C'-+FLb;rm"3l?+O:7&a<Gq0!'m.i+S.+>9bXnTk#B+ca1grVG[]5ONo8^s0]f)PS>86s"c9g2863T)[lUJ*.liFIMU,He=qI%QrR;?U&F4o5sPQj#$[;~>endstream
+endobj
+30 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 617
+>>
+stream
+Gar>CbAs+,&A7TLF%U;>=s8HMUgopMo5[jD-C%4V>*'P*J-^t`rqhWSYBLXZ&pd9uFLN)`Cht/N(>ps'p`fm,5^irs'+XgsplJ"\,GKG*;@,`_.[1"/WE,8$mOILP/&IP!$;sVI'2h('JkJF1QG)WBE#YncAAD8:G`p,J%j[]1+Ik0S#oF-qJ?;6]ZQtJT67\"4@IqUJ41BDTIPE;1g5Okun9-4[g=sJ?K8!Cr\a:?jg<LXE]+2!@]!SXa^PD_2Ud)sE&rt2alo`=4F0NGU,&U5>s2pKaj&sAuaWQsG"P9T9:67X<7A;dMPWB4G1F1;S,"g#e[dt,)]t9*a%(e3c]qD\JajGt.]F)TGM'=W@9A$6cQBS-EWeXjm&a0?s7J%"XOr8Lc4Z0t1HJ=jjGZpmo?#/_C>Sd%a5+#pXob--KI_:_3CJa,(mq5oIX@EJ)n%,e'@q5DgS$%^.`f2nEh,jpDj2*Zk=Q.M,m@>-;B3@0*nl8rFUNaUSgq%pif]?jZg;+MhnS%N;SGM(O*ZA+I#2VU0\8j&#3]T!0Z02ShHW2C!K$"AA1`AcF'OAhtj!>$RAk+8`g!uGY:qINf_T?e;Ee0gSd!>M#D@laM(r=[8~>endstream
+endobj
+31 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2915
+>>
+stream
+Gatn(?$DdJ(5D;V/,%Lr4`*fQ&0TQ7EY=gel8T[9l("p,)hJfo.3BGCc/dd.(>'`pN[IPie\pZ]CMW6uGeHP]`#hnU%MOB!-(KE.5U\2PJM;_mEXMedo[h1BbT`>\#'We2F"f`*j!KESjX:;P%DoZr_.&-jCtFCECuuW_GFZ)mL;dgbJ1L$Y`k4TCBc[\`q?I3L`-#n;f<PM33SB?XM*Z!>A+'QWI1DEcG*eK`S[^:W"[sk\)!Bj).RdHWErl;l8b*FN7&4Bj7Tg(bgLqo4$d1bCq-FQ7N+#Y>1UEV>(cT97J?AJ=*@'!S@6:r'LDW!ZJru8u1EGa9)[qZD[IGn](cecY-PNKl:-VSuSdYt6A5(k5"t[gd97I9*.<V>PjELah=Y;b<kaeEM_%^NE$n7Oge,dQYeER8Us1="kqa5=J.Yigkd)r3H7R3K?l]2n@"<R,M[1,cb$:nat.CCcs&u?1rT-Ac2gk]2P=NXh)MbUX>=)]P(/.iFY/rGE8/Hcb`\7c1bM^VlK8kAhmW$nDP_JCMnp9T0++((UI;2QS4ohsd:.K1qqTF`h1GP"g!,*FL,Jfn@X(^]ns+\UiC5aPANMcAb[=6[7$78X3`PAr^XOpmPBSd[%8&H'B&4guq2/fI8MbX3jBf>34Z+)Ji;>Un@]j)qndMh56'B,AE^o0BN=UGf7N2J'<_4iX2#7^/n-eI:#nK]kns&<D!e2'ljMc"mUm7jbeZj6p:Nh&fdW#K:@43dZ>ZE(P/rO(n+>2HN`85WGeLP8e<UjD.W$6p*jJ,*#QdF2Qb+le)blXBk`1ZSCHaE7?uh*[S8TeaY"(#+O1ri&Yhg$dHBo6cs7uR(.$.)<9#V'f.7HC4W]%:0Zkbel5T1(lm_!SpTMCIWZPFS7Zo"ne@.(Zaj?.JgYPJYklS4NjNpXY+KHi)]SZ7WGuV&m^_pSY+9?iqM_lIE:kWu7:g^/j10%eqaJ/'piEt9(Q7g[Y:eTdCBTlI#%Nq-48';`$st1Nr:%snC<C*lGMh:?g/\\<B_uRM=W4Fo%9M,2/$%!]V;[;G\7,QCfRPL'iJJ)T@L?11iJMcfZ8u5n4g$>i/*gbOOls8!*]5L'mI<_]\XMDNr<7Sa(ZOE^gs.PMq-l@U>tejs0;m%B:dtsl7Q$E5#:Q>cb,eZC7Pp>A%:s'8)<k'h1mCiHATU0T*Df3ePgLXc<2#7#PgKtPUdH$a;+;8BaP0V49cV<=@k*^Kpe-*c247/SbK2c7?XNTta(Kl+2qNu,jD=Z#-Q:C:Afb@)e?DCPY\%WP,Hk\')kuI(8b;eOGs0G8%;)IA1NS)73P`l*?tKm'1DS,-"Z')rbYot^\r_1hA)>raL'tmn<8X9nNqplo`;f,?gn4FMa0R(>3J17X@pWHe^YssYJ*ph*q=SRgs*siRhRk"L>Yc:\_WL)cj$V>/f958+8TTZ_\UDo]*bk&(1d2&%pGq8^bd^7_+$dhM`d!CY<s`qJ_V?bPDG-Ao`eTq6jhq@)+meQ=1;/4WeTcsibU&o)qfFpuAY@g%:lZSFB*aa&#Kdncjh;KYNQ0R@r.2`R$[drJf?!i?\fZb*Nj^$%HUZU<_S2f240lSul4m1r6;;qD.+DS+NSesqTK\F?k1=7t9::!kqhps0ftrO9n]giF17]u2]bi2Xa?Q?f2%oq>_Uf(k=6k3m][s+ZJ[k/aH]>Da./SS"+6`Q]X<4Hg7FWiV^*Dl(MS:J%'g;T:Eo,m^[jV`b+GD2*5G*q5E.np?$J2WK[p!IiI/h'uGVN)77=RSLC\7N*3Nl<OY8?dK/[(<-"!uh@njB3014GnU#9pmWiJ/%P;=KHnn*9Y-I.+%Y7D-D*.:jC@G!-rg@C81b52[T<ADPJ5^J=96,/+&hW<bAdf4:)56O[Uof_Z'.QJ0R#eW\2>asEqKY]MP;D@TF=c.%0C*chAVmmgu$[[dRVX5k(6''O2pM]l!1_%&0J:Wlr=XK5Y<q>">d<[MBh1)TS!HoN@0Vr?ClJBtP:c8Nh'&ukt.5?WUshl6#0.Ye3^>%Jb3T0Wm>#d\XGX*3dHDB'@e!FmRSPGfm;Q&.OD*GinM$-FY)iqNfm&YrEa>!>9DVll64PHq2>T\SJDK!=#7EKb9XI>rk,Oi&YP<Q=JPoNS-EG.dqH1KoVl'Y4_DDts?.N4TKS`nND.LL1>rC>gp0nmF.24LSK@/QpVFI433K;/4<MZ)P02g?;6/IOMPI/?Wl@=#2k=K!ie`7X%]LQ'!I)!p\\UjZ2*#gh<]0LXXFep4SjDF.'j)n_bWLGMB@DbVs60hV!\L<DSmXW)&MtAc7UMr46`#R:L5>s-DL*gJS`0%TT"pIg>Q48Y,gp3<>ang>(Gs:iAsd3T'I4AFWHH.-DdBp4I;tV#nf4pe`$!;e$ur*^q+SKfFW3/]CoS`<k=43UX@39%PG@4!n-2QRp.->;l;bW]#%'gu]TE6do\QamuaOL6D9q;7_b0Vrta3qVnkN.Q;cQ"D`RKk?/eJH`(>B,e]\?NlTH%_Gt`nFMue.ou/g"mU?4O6JQM>lA.G5kbdZ50().\%i9>/-,QUr(u`L`H,04\3/br56''^Ud!U3IVsl"W*b2HY+1V,_>]77)a'Wm?mP!=dGJEDA@mAiGAt/d]Lhs-XfUIdp`T\i[Mpk19#=Z)GEInECdHi.O$8h*UJa-jpoXdh!aB'go"$]&\ag+5]2ihMk+MgS+Bl$Are+.#kM#F/[QCbH1gDe/MnF+TWjI(CBjJUPOlko]5:7&A:Ja]CV]p0D_e\u,M`(I+kCkBYpF]"(_o=t!B[drB6_tRPFTP`IiWrL6-m-p8f^1\RW_`;FlBDL2*RI)O$0=/*\dc>p%6G$5sWA;(cAm<5928$&13YbCod@H0S5^3-<G[f*I_.7][d!AG-X',p7^&PaKX^BI0q?Mj9FM\~>endstream
+endobj
+32 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2766
+>>
+stream
+Gatn(>Beg[&qJm4/*:Q8bpG7IJfra5*][gPD/@=ZPbpGg08p=mCad`.W4:\k^B7e-:kX4Sm:/d+!/&,3LB.]X+S\U1s/QUEnIgl=;kOPbCS9JAYWRPO3Vn*`"PfiV%o2$r0*o?"8Ji!Ko@$P@4E+sFKE8U<+k6*HfRV"jLBKqcZ4n(LAcQ3&&%$Y<q+<e0DY4)AVplM('N_::D2cu>0^:>F%']I1?@@VgoDDg!_H6%"E#rpj=hqOL>plIRQ+KB"^L4@X8``ERAR$R-#,f)o;Z7W$J&1]`)Vu=K@iT.DMZ+G/nWa5co_9FiU:]p7/723Y-VVpOb$d[lT6oLhf9h>cN2,RQ]f?\'7Q>_?J;22qbZ-iP,og$IkGQ]?^,"igkN)2+Q8"XakoEI';Pn/K-*rm'fjqRLq$o?b$IQ>6ZE!UT2Ic*gVt&)W]\5&sEN1RbY/;aDQIiE"BR?<=dS&5Yq$iRB7/(:p+FhJl%fY>,D<:/0$Sd%Qo%R,Q+#o:i'%/oB^:SAm$m1O=PAI^iW)c@$X#+XVX"7$'5aIc("CK-[1>h!iX#NNiP\@rq_+"uKgKRf?%m.X<U#T(gPTp`Zr5D7bL\8_Y"e-)70s%'%Y`N>1F*uq&'t>rrjXrS-]BHO2X-#$]!'>EBpXGF]N_iD_D)>dG.m98cXO%A]84Up4>!b8eU`4,-,%sH's-r`,LQ^Xh+'jqf?U$fS6F)V5EIqen)MeNP85Kho<_1-GV-G<N(%cX;h\mYX_?RKr'7k*AhfCY;Y'O7ZS\RVUf<2%8!A8-c(kR8q?>4!79q3^[(c!]'JS86kNlS\K83G<]`fL@pY#Zm*'+/+.RT@%6,GT)e3\o25V'B4fIUI?81o_:jn*PYXO``"I<N.iY.qrX-H9ql)^.#+)k<$&rYT=a<N`"b[K]<mj`IKcWr+!%"/8'#`Nu!ZDBk.G:E1DIKd,DXC[m=qBb%NS"bl!ktY1i`SN'Gr1boO6@(0\q6(:0[Q#&(7B>-8#\f7Fb[TZ%.LnK(k]L__qriW`S(%kY8G(>D?;)/-:QTgeE?M_a:2[i3FTleU6=Z'`3(ngc7<k8.bC*5T\[m.4A%EiQjG7al$7?;>*2/=]N8N)&m6drb-EiaOfQ7OLu$O]bLk#>eqH'\NL$R0?%QZR?FoMSt)j)5'M)-rLG1e:Jk`TZ@<cZ6"m>La"WOA-RpuLEc,Z8G5n+#)_J1;.RVc9t`<u5d:?o6L*dJ]<C5E=6>@:EhNFI]UPH[8+TMhdGi8A&dsoa!0b@<,WWXcYqSauP0'@,">uUs14r.MdprW)HjrY<RPkA6@:8<I1_5s!""$U#8MXh>(eg*Q8NgJ#Uc,2];OcGkdBbSknNuIp`,MFO23>0hZHIpIK^t2f*U_ZPoC;'DTkp;9W<m-$>NbWEdrGQ5J3VhtKsK>(3D^%jPemKu(dKMS;#1qUI1)9*NK=0P^pNfY@BbbDUXVT/71-J(+b'04;#3='`BKO'J5X$6PeqQ2^cD0:QJJEc<,]n)U_DYSrW=5h$UjUpIQNV9n]Ois'c'Wb!DnIR<,hn;@0'C+/?%>*.^srN#GCVgW1F/lcN:*`J1:brMB8^*#c]RD'aCUC%of_;.c1Jr)kcbg"dS%Q(K0[QB7ftt4G==+oD.`t[Y40mnN!'<p/Jc9KeIn*05fa,+5i&]pu4N](UNVM/:=]'?YmNECZ3IEnAPW[nH!"0`toig`=9Pk_3`p:bO+i=pA&/%?gNLBU7pUF(4p>mod*d(2ttRl`PlZijS'I&Tog@gO]c@.#A@W`)VIo)b>j$9HJ<Hj1UlIHenqQiA5*B<cq#`FZ2or$5U5UBaG)N,K19J"8:*2Arj-'LZ;-hTX@uF&d'en>Fa_8\RP[cPc\4+MEuE6#j"i[8Q^BRr]SC28Sb1dAc!s]-EbQp'%p*LiCjPQLG,G*jJm"^-5sRe^MhOL7qK7#;WfO'0l=A9tD6J7WACY5RZ8tC^T@?fsa5+Pm7f/*1Y%:JO9=Ti%CO8!!n/^Kbbifi@;p%EI-""bf(=a-cD[1PU*:K:jcjoZ41&!g0/topQ[ZKX\Z<5(Ml(FP20L`,(7&$ZM,YPRWZ@Z)*kSch7;YQ^D#;/-gZY!k.kNfWWBCY87*PK#,d$K$HXR:OaKUH#ma5akb&Y!LGodic)+BcU!?<jMZs%LSYXV$LZL3(i5\\'MWZ>o;,Og!kI*CQsOK#`+<lT3S665a^V5;3>um6&,[G3DOiD.9'0MqqtY(Wl\fjl>(*O0OdhcGeu1LV0B6A<4%C2"3k]$_',f;dR,!7@D6a@tLlrNQ_)&D(K4#,k=Hq5"+TU"Y0B>dcdKIdXUfUYPTqf*"KG=")YUhUl+h'W.m/ZqI3nj1n#C\6qP.NFB(W1-KlpIY<m=G]N;q]MZ-$9nC2*Y_c=)sFQU-D"'1F^ot&N$s1W\=B&)2<q!cb0H/.gBq.$GF:PS+p[0[o3&WE3^[oK]YnYFUc,t1FP3O'O/H7\4'G!^KI1uYre:;tWM0k5H"lF+0aC*r6C>4&h7?^pH*\,#mf.aL`_:C4Y8\uI?*l/A,Z!-s(!]?nY<igUll_fa*mo./&.M#OQue:m$r041d1Q/u,=ik!3'BT,uM$eC]E^;[/ADcBn*O(&mBVPd=72HDo<lV@c8Yctt9T41097B5Wlo.+laV(nj^p"`Ko;ng(F=.!>l4!o2WfftWm=eN"Q@=LRI=60q$^rh/8bLC,-<XXss]U6`,E/<g'*n:<#RKZe:Z0<+)b.T+Rf'G%UUSZAXVQ-L17fN]j-RGk~>endstream
+endobj
+33 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2592
+>>
+stream
+Gb!#]>B?:T&q9SYkbg#),XT]T"$G:om?<aP8Smd3D:Q@.(eGuXZiaFX^YbU`L*8:g/gjXHY/EYJiTpBm*<J.u&G9t3".ZQ&GtEN_=KR.aQ4'bfE3VJ"kJR^4LH%J"JT#m$!*3cgJaL>!eO]dZ@$)Q;")qMg-D'Zl%\DujG/2c">m@bch$\UUJ"X!SW%Y=Zb>Ec)EXD9(#@\ngO:J(8$RHS]_>mBpE;JH?^FAWo)ZD(t%j.OGjoWgr]M3/_f8\_X)naF>):*S*7s.uNE7L`jrsu3F_!6W$^$uSn\gWua`p`[:D)h=1M9i+4IDkM\q2AE(0L8FmZ>liQl5JqYEL3"+81<T/Cdrj)!t4co4oA#[e8:">_l7RjlKmZu@Kh6[lGLm"eLUF1WsXDWnl&kP!t+an8#"q9)F8]eS82>&K<snU<?0(][gL/MeG3G0LtcqqEbVhp;P8kV;(9MaK!\7Q)Nh[a]L<ML$#DRFC)%b_p>]%$?Q;nB/O)M./Xn;B!j*5L);K4&RXE-h8;k%^Ia@PaS\Tlc2(9F7//#8("#':9P"dA?r=mSg-kpa)+@$ksW""Q%r;nX;5HXS+5e[s]@;4ntVMF*=J^a_s`Tsh.q7$3/=!E<$5%3UQ%m2>i@e9)<ao[JuC2Ep`1;3=ibu@X_7;_eNhXDAaJL50gBb%g?GIoFq]tj-[dATL)(/7sSAn2bhkL.fUZq/?Q2%b0H(lCa0W*1jSRQO*tRDEU-c$'5#6[($-aZ:5$N\_MoZcf)16WOsAW'sZbYt2oQ3'tgne)lj4d2;QE2iWX]1(I$tf1cJ8.'=racm*''_HN`P,#B'.!VT`(TFY]54t<F,])CT3k=^cg)3fIA8$Q3+(k0:`qA>%bg`Ld6'Mr4YMRW)\a+nE3[qM231s8OjPXj6bDXhi^\.4597]#ZOD_A)%;T<cQ4%*>1Vqr0M53'as,3S^qLToVn`RcEI.fUh-Qd'+Mr#>JE`pRd`6q3<,G3Q73=aJD\"lIW4TT;Zm5uffeSr-M7_gS?N?%i$?@ku$eQ4^J<I')g.Ga3.RaDb.HLh0Wc+9)4ZXNY1^hWl/M%p;jqb0jTE4N>85CYRKTCmhehd.%`+QL+.)4Y-c3Q!d^%UBNP,N(#H$N8LgG:Mdd'OBg?I"*2O(AIQ-)J*pB&:Xs('Ve-)WY(oV>1=YH1/#:*ni=E?LZ+RM'bE=#5A*.F(1j<L;mM^2rHCc(#?>,J[rC:,.6PlsnAg:U!mob1K(4QRt'@O>+,)KN3#%=qTKK_btK1F;UcX3V05E9nXp=8aE(Q4_+U[fTX>BN2_QS1dknHtHc-;`)k16lQCV/=::FjEljb)?Gkc68K>rWqNE3?_#k'8_oF8[9[OJblC18`!FS,"+G3"H60^6,?_7<%6CoC2Rh;1eY>PY8QJo$8WBf:5^rIo"L]k`OZboWh.ZBC64N2;o31Z?cPp,M<<^`L;B)HM[[W\($lI<BAqm2<<B(u*I(L4SQ6?RbEc10kT=&qU8[?^6>NM]Gm%kis#R*fdNa&?,(Wm<+`S^\=/GX+-LWprd%Ze7g$%[[&@*F$IdmOq)#\SdBR8+GgC]`,&(G`O*ROQ%n6.T:aX0Vo&gM<>aur'k6:BM4P<st=L%MdmcD=S-;6%o0OI$:"3q')t]F.]_3:Sni(&/++@ak-/"0pl+YI@Bb$MgVqd0VMY4uqR6^PD>h`fo(KJ_6=KCUKB(3fabKAOYDt#s@-U+VT*:df/)SY9`FtUp#nTjBsPW"d2V4N,5Cn[F.jUIs0[mhr8:XDa(GjX9D*@PfQf8ojP3I;K<cEU:W8"-3ot@F.(f`p#HI@B!(;6g)#(<SDqg752>bj&a@nU`6e8M`WcI0MN@3YY2SC2o'PbP(Y>kjK&>MWk2Kiiq=`ro"h1P%Zdm%F?h8+lnXP^\*,VaUr=dn"h1U1hBdkBU99346FVltGXE_B0dXR]7K's8opPEgY39LHPV^=?KDL8K)1bo;_kQ8<=5Nk2MdURC7WM.gl?QZs6]=\g#->G-EX]3SK</=7,,=K"SF:P*.oUA'%Df[?"fsCQ29ct1>K_7Vhb_W.$l?:C>_l@p`A2?5Vml?p7gdbMC,$=Gb7ghVgKRnVI@asEIG7LBbN&D_(k79ndLR:p&ZKa-C3`U+]-Rmm\0OsYsWUlkIdd<iB#$ruA1btEA(n+.a9tN-L5rVJ#at/`*[[dSuPJ(prN",&iVa9]<a"/pnn?i5l1[s1nkE]@8e[/rnSNCl)Nq4RQ9M!REq2%WrK5Huf7.F<X%S<%(4JMLRQD%fh$GOD5BlG8fhshsh<ut!mr@Quu#PN(o,oJsb8G?$t=Nn>50UUWsD+0aj2jN22=rMg#pO.pEg8'AThb=+m3U%A=5!8'`0-]GM"YlkiA3@:C`n]Rp%-IS4FQ/G.i,Vsb%'#tb[:WFFPQ%7_T,aF6a#84co1?:HI'HEM[c?\Z.2%mrk33Lg$AJ@*]#:2dQ?3JEk'WmG'*fiT68Ip+WW/Zbe&7mVDM`ab#)(i^d8*ZDA_6cI%V\t!*PYT3@kO1>2>).T76eHJ[QtrV<?/_7r3T]_)$b$"Zf;YDAi%Jk-]unsj].McrdgKb![n!LW'OC*~>endstream
+endobj
+34 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1139
+>>
+stream
+Gasao9lo&I&A@C2m&>-V#n2=a#p,;0j!9UGEMW;m$Uc0o1*if[:`T5]G<ta,Z";H*=XJ[T\,-s<edNrjXT)SU!3\>#q1\q1Yk\>o&-872E4&hs>7i.oQ=N6[7\s!JEgeL.i7%AAJP_"KPq,B.ThK&2C60Va<2Jil<l')>!+`p\RbSRJ"nt9FrWe6e/5%:r]3rF/+=@lK#a`(glP_D4lM=GcD*32X=U$gro;74CD/j4%.K#ksn-cn0pQ__;o@hs=_=bX1ju:q?L!>MU^VGq9?tMtK@slcf");7aMi<TAW?a#jQ%Tig0k#f1#/Y&r1Eh;lCL#jX(W]i&EcSuKV'&Ym:b7BgS,rokjTR[ScS=n32]OTIqGQg6WF`#1+@UMsi*XKg:FF'n:8H+eipbj]13l3-A6XaIO5(u#4HWPNlq@h8FSgjeHE4Xk`6N?r#$4$*kH3LTa/8I?euWdS>cnV7B:L(a*Nf@Xl8C597UrRH@F@Z5qq_#'_'pKa>23eHeLt?DS8%ltEs><$_R_Y5FVaK,Xfe[Z;jcf_q<B!aD<G,/r"$H^C0dTUfKANF\nLKf6f!u^l6MXQqg]!E!LXE.[H^$3BC$o5\P@!s8K\OV+=<"^lVCPm33k8%Zf`emSt7D,*NS,CmT@QR>.]EiYk:=P>tfBSnFu_RqOI2OK&'5i>gEj"?A%&+>9[n2BPgi`j2u0d:AC6CidDF9>b$]1T<M]c)jMS:QsZ2bo@TE`[V3<Bk:IG9W-KU7Bn6r<\4A*hkDs)5,9I>4qe&snBlM.X'/;"ZcDAUeS2nXcK\qrf'TN58Ne5=e;0eJEbPq15dBn*ZlQ`0e4O1GD"@K47(_[Oc%?@rn]TN8`k!+hb$42jRc3EZK4T(21e):&]Wb>X9gB.)NFbSXASK0):R>sYu3H:Zg=Z4-OY/u%?K_--fgn8Q8p0Rpa#EDi?rIVUi.O\,13l"M%_h%.B["Ib^<b2h)>f%mdI0pLrD%<]O%=;s8YkfAqDbFK.gV7pYTamj7roomKb*4l#[@=&H7;_=eI6]Uo]=,8*q`A""XMhRMC&fA(*ofR'qOrOYJ2/ErJs`6sBh0=kO;)=crklPcX@(^NZ5QoWYB2po^4234Cu"isT,/jkB:a-d]V2S+&'@1)f)~>endstream
+endobj
+35 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2291
+>>
+stream
+Gatm<>BcPr&:Vs/R&=hF\%r>kh0nKY01iKe[qY,tp7X,Ha>PUm=$U$ZYMYHB+`%fMVjj2]n49!DF8Z:E2LZ>443dku048rhJ2jc8!c]e.(2r0^ioKun'tSHA&&8MSgC$BQ,!--K(N(j$$?/@jKOGS3gpLtX"Wla_\Ue=I^>FF+_8ha?5p4Jap$n=]aQ(+*X"U\^63?$HZ'$%s$W:b[LuikYLq@^fI80;PI`Eu66@o3odB[3_c:,B@.i)3o@.4<%nkI,E<`HFuGla7SR]p.-nJ)hS8bIfJcZ/JeF+:.KR][Jq`f:RC&\Z/#@0Jj"nA5;[.1Knd:>gG+U"(+ns#Mc90&!q$%8+P)_>t9@UH!=/PLIU)`VId?.l8&Igb*J_?GRGu$/idk<q(s(Drl_nCk1_/-J,\R"&jl=%4.mkcFCr`n(S^7=n;h45pn*`A8XC7Qi`A8:otW)D8F.D-(J>Y[Y"^i8>'5Z3_P"ZoB`&7=sRq%n5iIu4'2i]_l#=oYmPMXYU]ULn]L63C]$AYjZ.nTK1ESjI7A'Yi',2tWs$.jIm#d/#7Q@KDg85YDXK%b+'>5JU=2T,)%PTWTtEAi_$diJGA3@D]AoSP0Q_-W,K?%1(iXVCHoZeah"f`1r\>3*Z=jVUa29N.\b$G\>hpJ#2]"L!+@cB*i:$EQW.dL?9jF>uO*N'3H9C?/4VO[_/*d%=;e`ZXIU'-"Pr4_N5lC&Cf4eB-Z('jV/2?lg9\:T`+,O+'^L8iLLDCd*%V;3o<2?T88*P2d(NR]gJo<H"iB4_4^RW1*4qac"s+[cf/9tMHb,F@YS8QC?bDTN?j'%a3W&GTlaV6eLpS*t-EseFDIT<&!YUU>%2p=#@D&rB&Z=kVF'?4k:UU5e)B*g(CDalA2UU>HPjVohNfDudbdecf2"&O,j^LK9YjTNHi;.e=Y5I*sp5Gh4S$[S-oaHa22<'#im1+KL@:M#C_-sV0m)9Js)C6k]rZ7fchGq^Fb#jXsNo7UZg=PZJUeZ7SG$]I1H%=P7`^`?XWZ6@VcaYnhrb/=qIe0nQBeE=q:/Rj-)fm%.+Ru\?b7fi(b($d30&ogsV\e6iH$5l:2it9u4P>kqXna2S0*uC)$+u`ID$n,W"@=Mb`XNT1R97])RC.5@#OKrHtKg/od,)jV?[^ncfI>aDPOsCeMO<GHiC`<bA,pNXTp/#;o+qbARnkk>CTu]/\mSMs_U>^NV!J:eh&-Ko`K`PY=_144-i0ouQhR+(0&iF)?`VQ:;P(Ti.H!\Yd6RVo<8&d@rG<KJj4W0/]L(\c\kg(3*V68dM_qc`J_C4p49Kb:-bZ6+b</0$--I]"`>m,@/HALlq.,hDW0Hhr5`;UpbSm.e`erKYM:\GNYeNF7?Jo@\IVuWDpbkDp&E<=S2%M!4=![_\dUr@)5\qZTSO!<I,k^Xb\n+.ej>sL]"p6ZVWdr,YRng_5nN7Ft4$XU$fJE-jABnaL<6K<9gOfcOU\*kk-a%WAA.%b\RfeP/3=]MN1aSI@:_6t[A<@%YkHsa-4*i&.?*>id_X92m8#?47TI>k,f5pb_?qj"s!Brj=<e:&+t&]pTu7MHriB$E`p:MAcU#FlE2cY[E%CZh43Zp5D-r:L2qkt_2$qft#1qFT:^bRF@Zj,Qm@T,i.$"f#R%-*dTmFcF?^C*\=MLndDLAOABL^J-ENObVYhCcd3JhsdV9<V'M^#b4oTL3Q(BUD\D:4c+Ps<P=gKkRTKWQ=KWQj+hE]ne.qfC6VS;VtUUWD_^cb$#'P\ZCGnDRTJ]N2l4G1>bTX;%C_C6l!rgil?IYpr.\^C8-Pc$CEL:Od[1]g)]m&X_g8hVi'gq1T!(;#/*G*4j*fAWGoa(cK1tJsEM4#,'d]WD[.g^1N4EbhppRd-S./Q(alI4P]FUkU7WOn\&@^AOcdOEaG,:r?4RgK3B-F78V?r9O!bS[%+3P.8"aBWWgf]'.<2ao'Mg!r4Q-qY3WOA78/>$Lc+4q*os.B6@XmA[=!Nd>W-3gS7g.RIQ8hE*"Q(@+EXjj(4>,arGZr2elBr)Rcd)o+(5V$u0go$F.i.+l%GO9&i:)D'JMH4m2A$f)l>S9G:;u:8if/;'2`G%?&d)HX,^@A)o./W9XQbgPY)]>.u<8kYs:iKMD`W-5jdCoQpRL_0+2$:EVB`dPgNAOZI7BZEk![amNgouJoou9Mgrb1/raqkf9FB(7ICUPSUh3r4>XMB+*.I#`e1!*A<i&&?lqCYG$Nomq/Khc83^MA2(ER.SM?qZ3Pig>qh?G=pC\kn*S^!!",iT+?0$g*r~>endstream
+endobj
+36 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1431
+>>
+stream
+Gatn&>>O!E'Z],0.F-BlgKb80^H@5^BLF!q$&^;+`?YYnEfr>#<-:G(*oFtICg^Zp,0p+7DKF)VUR2)$(G">YCOkG**1\im*9MI\,`se\"QOe",9g.q-4CH$W3R1pUWuaD=(fnbUa=5gB0f'TR5,-#TVNa\C>EPPbb?S<al?SISoBmK#9o$i+HeIS($t@0#?DT(ZZ&CDEYc@?0_cKgYI:pp%)+H+i$.#jaUX';`PX/u(>3,_^i(o0Inu8NZH;*B[GAXO@C8dXL\]g]s,a,hE[Zl@):RsmTB#eO(_'`a?q\.nXQn5='?2nQ'(=p8XT,iF70`_BO`ZOaB/D5=>UX'giOFupQF\24TSm.r=@@VS'I-(F?MJh@&WM(O7q9]-<^)pQ(0H;uUf!E$/$t.&Rq.G5@MpW/=8(/j<tV:m+ZfT6&ZWC($LjA?$Em]D'3mEGUJhZ*i/A:QJIkMl,(Hml<fGsUS$!NGZWc35);N883'cK5Oq)j)30K"t`LSR7:G!@iM,KQuNJ);&2S*]h?5_d7%NL,_<G-%U4),L='Z]>nBm"8=$)S"4?2(5D\84KW9k/__kNRWjH8rVAmYA]3<>mSXN"'&0DZU]HV0Cup8SP^b/+t^_4b\=RUVd9kRua`M7O$gDaC'+EYjtGgG^"D&8d+#5E=Hp\%&Z%Nj!ts@02Es.f2olcA9o+'nX35TQ]=U>'O;<\%Q%q#D;kl.l-XQV;u>#[D%Z?AmFrM"7;ME\^mN^T`k:G2EV[DO$Pct#KTOS&aCkf6g4>3k+JW5`BE/nZ+JU)j^8(fc?ZI1*mjd\BJ#&#d:Dq(Ac8gkU$ck#>EDd4[?ApQ#0Y8Bc`j6NsL`N%Da0>j+\C/pP:8.cjp7LBqo$r+K<Y)giXJn;2B$T]CT8pX%>P$ORI64'uLJQC:Vs3\b3ddA;5-56&eQP8&cjcVuqWLog?7G[AX+jD'+a6+Xr`M.>]IBi<dlcdA"FQY^jqIJ9"l:sWT1@$"2Hdo\j*5Z0K::@Ui+.-gS@nhd1d/Y=-\0Z/^mQR#dlkL7pAn%^!2k-n;]Xdq#<:69SF-DQGC\-_i,f>dh$$OY_!(hYh#^?ZJ5_M[;ZUk&I=^F'?qZJH;!e@)Eq7d[E&PH,CCE.cPI'fWeS(s(2!#BaarWCi'55N01tDJr.=0>T4_T]_R\GG3kWr/@TIDs9apslGKr442.0DD<J>R.V.9^DBa(U>1:%?MBZ<W``,=M/"o)HLNr+S2QJ*EY#3S[m8;"c+b#lb?2Gnmjd,%-uEIo,2dT&)",0&d=(%PD0L_;>N[4X@7*mc$U&&\**W2R(?t&?"ddB=q@mYY3up6aDJsP25iX_Rb&H=enX%97OePpoqg9lR$AZ=i0n#0%oXX`pgRB_=?J#>\nW`iFaj7q#8c$YhaFBa.)i^:#Pg4oXs3L>!;cr61ci"&RR^~>endstream
+endobj
+37 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3462
+>>
+stream
+Gau11=]=(r(4b<@/'cTPP7+[";JV[_9KD$]-P2)RP"OQc#@TJZK,-t?EEk@crgn"!XVR'S:.V>9;Qja/:9Q";iu\l*o,-E1%#/[,&-HOR5V103ff>"(K5Uk:[7k$jTXg(X>o,=npKZO+l00;kbLMF7H7kSNVA&5kLk/`iVRs:mUd]5cW&emBqlXaA1E>76BVtP0RRN$B;of`e!i^j;]bj-nW97XW(_4jhGadKb"ahVV!uHDmYRF"Sr%9PQ]NA_RIY15)N*+;e_Crb_J^[U9YWlOh&'SAMmZfsa[]L3P\,3]+(CURHWdI'qa?!?JQX^[<2(!!/bZ7ot6*t-h>i4LE",Ou,T]roD=;3SKX?lC2YgBm$WXT2dBJ:B":WG9dC)@GNq?:+#RmZt<F('NM2d\2p[05b2ajN%NMPTJX>1VdUQ?L87LABKI.'7*%H+BhX9o)D8c/?G\Phh*Th"Wl;!3PL\Q2LuS=o*Y\c![)SpP4j'8+I5Y^4D[5U=)/0-&&d3B'O?igCBPf=i<Ohmj\5?%Q4k//.^"o3B"T>pd-jYFptO5kEb?ZlA\g)48(@i08QQ=Tm]>b3Xm*E3$-/\Li&E2A7%*'N`*rbBMe@J;fp][hK1UskU8iPT2kFHMl1#L%djO>?4F>A;FZiNV2'0;Xhm["V2Lo/AS3"Dj#"q5.UXPBEZ:ij`>oeFT'^!"ph_-%L9S9D[t15e:s24:9o=4mfeH0^VQt>$^M?dqWRK4W0%Gc<mZM:MCKI>@>pCE!XJ?]@=dh0GDq^@gL1VC9%8H/#m1q.'.G[=T[qL:740D`jeW^N#B3eOp)NgcbXV+bp;JW+46FuQ`=Q=:?1f=g9eEAs=0SsCgeAP*Vc*%"h0tt@CSW4G_4lIJ:/5NT'+_Ls`XJVDNC,dal4mBV\;lA;1b>Qbep.(588iooc.@I%U-.<bdoF=cF%oT2..FLM>FH@[uUdu:NU*)l=UdtkB]nM^M#Uua<C5HRI7@lu+:g<Nr%j,lsWKZjg4M@,pT3T\ha+&Y*C\ZJ.gsj/A*0RAH:-Su&1&:riGp?tkGqqInr&B>0l/ehba`tBMXI`Af?V*%hs0i#nkmFM`]t8(iCTHf__!:R-lL_mWFC95aa/^YDFLOs8FJZ*#X[J(*Y^2UO]ablP[RHFi#$..FC<?bVZeeY<)Nb0(;WPD$7tK39@9@BH\YpLX-*("\H9"&+:HqXXa"SO[VN^PJ0t_i86b!t?>Y`&l_\lpB:\up1oJ#HE@F"+GcIp()e&.^IZcpf<k%G9H[)8Ei@F":LcKSc_kqM:BQucHT3F1beKfMY3c=o"G\!XKD1Ii2BkfY_o&5Uaq6GZ]j]=9s@T>UQrpgedCf=kY?*jFiDY\4PLF:23X#;#_X@$s/cR6=rG*O)UT=B5r7Zj//9!K2-:U+NT_(G)S:72<%?$S8=^QLu(G;ZY'h@BfO0dNT0'.Tl?H$-/h4o6nG1Hb_DGJ7\G)ASqOlliG<-=g1F-=JQ0QdK.PTJ7\A'AbLXcG/,jp@$rUNbV!"p!g]g9A[]B0>$r5/_'04gjFtFuWFf'>XeLD)*?SW`:LJ9,q`$WlO$C!]keW0n_2IsD7CM,CHLN+CMq8QgW2EQd<5+eh"gB=NE[%$-NAc:nBeW!31\:Z:3e3>&@&*rCklO<g^k`%/B`hCo,QOkkY1mWSC>%UCL+Z8C%%Iu(^p)RVYj8@5pXeG2-XtSGj\a=4JOV2jA#a.,,+s^2:Z?MWT1k61a%sQ!<1IjY@\7YR=tEc^Yb4%n#f;rTH'frS1QI_/WlhXG4:-@>&!0-6E@ll6=#W9.@fe!.,P3ao9hJkk"U8Z+&'mFL1\hND+4tNi/TcP'EV6iIW+MJM-:)pMRBNo#J'PbLbjYJhhfTbe=Rl'F1+uB)b_Z3#9bI;MZUsWO*-iAKb=1N&OkukL-AhSB\LJ+cCD.b"m+VlLI*Bq&b(B5Dq.TFunI.56rq7XD5+9u6T=b!/CkVJJ\/6"b<,ls5P;p14o?td0MF4kj!!cAG1\ARW2m"J7Y3_dYd0%"\S;=mTPCe5GITNu@/Rjt#H&!a*s'^o*:s^maNs7-a69f5]?*Jun.*n.>9+36r4$M^j`Cp-3'!D0.rJsR7<NX/gWZ[=)i<Ohj5Jt7Gl7j7X4tG''5*sZ6a4Vj>jsWq@A?1Ob$1#fB@Sd4,k4]ij=WAb3<(>j@#4&M'9/0O&'U(tQ/Du9=q%$o&BlNM3CPUo0612eg_>G/4IKCCQB@nL):g[2C0GBI+"@#J_?3XCLbLet21kYTR0@C\Yq/QEjcH\#3:s9`752NCqc8,Z,e$JfB%UVl.QOVq`L^;lXnMBZ;J2Hd.kUJrDXC=_eg_G8@ILr18?:2RNcoc]s$5%!^7AD/C(1W3I@^&8AQo&'uj:aR6m]Y-6)O9!"TAN3$Io_XO_W?q,UWFZ!8,auGYMjXNY-)LTEl\W<_g)WRTYW1t?kh)-*X^n_p<+0Jj@:@_1?UkhY8lXIf7bOBCpP\.06lh"[EG:d_$SF)C5RT%YMl'iEq"!m,iu(r36_3B^5$I5_>@fD?*BR;1ufK*,;f0L@h1PE^.&o$E2BW0!1Imbk6!tp%2NAE[,ErTi<,N]&!]\4^jG>nkg<sOF3Rfn4!%d?_oZRMK(;/oga\?!(G#k&i?V-H04;rR=]ho1OY/:pELK=qE$3g[<eBuQ9=]X913>^>hS*`Bp>g(HgXuMQV(Ac9>s;YS)m!SqQKgM!oqlV@"u0qjr!AjJ*2EK?]UXaMKVnYbNje4bko$PbVrZFpG0@^8Qe8V=8LeUSEKJou\?(6s7LYjo(M^d@;i79'e00LG/Ah]$[Df?g&OSitZ-iF&`XRaY()r6^)_Q:>hc+?Da7&]M$8f01ho!+bZYI;HE01RlU/O5Y0(\Ing.eKM+)Z(>,GVrUJX[S5^mZ?6l'_ceBDI&W[p:[\+VojF>V%%AM.c3-T%,P;h^AoVN<5-X@LUM$X]=2o5@I/%"7OTP&]4gUdoA<`nk4g/BVQ/jO!YG.[EoDgAY&_0YN*5pEmFp67AmK:P)7<YlK%>Oc#0tJ/L+X[&O0%C-#QY1Vf?9F5:h<YYeFU=[;'"(q7)0uBfR]PgJl$AWfK,%I^7FsZIT2^%H;,V^/[e7"_a:I,@!M;1VU8\*TAmjni8/Q*qPQd2dmCD7lt7gpNO3MZLg*Ra#LEL:NAWHQ@NG;#HN+n*&$Z;6WmBdk.#"i^:-^Q2%[S$3MVk@+BH!d&oF3UhGUF;$HiHiX#/(;eZ8su%K1Xr,Kou-n/\[$%dR[A$b"Md<LG+gD%o-G6u&UHgKj6LMnWh>+b/apJFT7?n_KCJ?n54Ob2R@;s3Hm5FUP\Dof=:7<YG><4C$rV`)V@D72C3TL/P$H2N2eg6cmd2=aH9#gf>2?Q!&8lb>tq&q@H(VdM@H`@Z\#86kQ1GKd&oh#"=3R"I?'(>Lt@Bo1CKWDZ/?meM'Yt!me!@leE$1%gN%=+EBPE~>endstream
+endobj
+38 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 905
+>>
+stream
+GasIea_oie&A@rkk#A,W8s9r<P/hH8\tVb*oTG+V1U0hL<4'Tbhfl$DP2eTh2f`Ne]NH+KHs$7dB)j%)YZrnj*7f>L";.m;%\M@2`s'j7@"ABR'pVr)1"9kdi;-oFK@#9cD);BI:aVH\%&?^Ql7h#NV=8iZ4&?u*O77fQ%hBq!?U+a(.[3cdHNVi_*5-;\\25,+1H<"*Z>4[MC:I\E_2kOpD$f[SGam2@Y+*kV)u,R2WQf6c7s3g3\7h%bI1,?G=J's7'-@jl.:_>la04^`@T"O"=.#-e]T`s1,A*<8T.q7),pX$q)jg?C"fBT?TQ7CQpbnRSUI'4G.3R$MF2[]H(\_sh5nVq=K(k\%;?a30Du"g'H#/E8GY!c#_ANmYlCVm_<1&L%qAf/:<dI`[FP/KTKGlD&p2P5o_Vf\^8(-`\klLI</-"J&DYFM&6%.;Y>+T=gkl,[#`ESg#OLlO$f_Cn``QuH$G/g]?%2I%Z28YPq?n^GE5c6Qs"Wo?d,CUVA]U=WP*,hQ.F8SqnR(g@B4<-h'S-N=_]lZ5i6eeRh5;\p7p;3m(3AL`2k!\Qk_":?1A>mD=lYR_9Lg#uCBTLsTck^WY9oRAdC%"rP?te*d@7"E,EJ&AX8.9,d1^=tQ69q>b&O0HXqu;HlHK;Ecb%Q-6\I&h3DRa/hlidC=d;<X!foik6d?VUY3&NsJY"T:8d?p<P<BtfL(+NNP-*bFb<JAVsj>KSnqAD3:<nR+'6r!&(gimb&VU)46fH_;9"If[B7[<B)Jh&!;imRL="MS#C5iss6`W?GJDbtRl+`>F82s:h0=]?(aK!u,qa\fUcTo2g\FM$=oeM\kL.,>Pg3&E:48S-#+h"9Y%TCVeteGVA8/M_&?pAE(KFE9Ii4?e%c6J'blp]kSoVD%~>endstream
+endobj
+39 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3291
+>>
+stream
+Gb"/jh05>J(;Si+=59_0mW:fA+U"<\Eak2XS(JaN9Xa-VL"J4jC1@doD6n`j?L]1l_'/6VRsdhK=rZ]u\fX.B`!rP.n:tWUcB\HC5+GqUTFCbE5e4_I^B2aMrRitHDGnpf_m,'[3+087FU3cEAM48U(t<P1#>B"HC=s@R_;_mh*$M>j"\a9^!k+WV;:?K.QICIpAq.VSPhO!+jB`=hKp$0c7L`t?%ZXl4Rs2\hZFX8:n;5jW>R-`T9VA$%*hkK]V;!8K^VOm"?A-KU:4kB,`GiAIk2AP?rr`1+jRV"C(=#W&(%jFJ"SX'9;]G9H\jVP:KjM3\#$O^JQ-s/10Ul9ST\GifT8]Q2g`<-qA4rG!0VGT@$8\MWhGDZ$D_sHDa!^W_duRGb]7u6Ena3]\7_9kAXXc`KKu$+E3Y!rC&XQ?f1_h_S9<#ehG=4],b4n8C+/Wurc1.QUH-=&q;(#Qh@DX*kl7%702GULCE>ST:g&`oCG[VJuYaP-Flf@F[q@\R^CE$kKF[:^kf\FT'Q;'7n"Hin&12:$]OBSZ#R%Y#OpI28fW,*U,9LQ!=lOd*(d3GJk`J89Kh:-f8Sc-t;JTQ#MF@lt>fF(kR**eD6CInf8K,?>52kton[()#(Q#T4t],#I5mW0QSNr-pBe3t>cAtk7*I?'qa\_6W=HA<77.%8M@Nb)%=OXcj1,75<P)O;ge/S<t*WejY3O_QXK3L<#h2(uh?QKMg=BQ^TDiGPk?9cat4ROn>2b>CstZH+[+<RhM30q.bb<9Q4)aACtiM!!Hg$C,JT4E"B()(ZK@i1dP,-9Sbng$ciCclZ'U?p,)7@,*V!ca:n6>O"pF2[cs*gh`:>G1gDM86WALq%kG'9o;K*,-jiRD,<Wi'X8uRX?dHQV24@MYm*XuU53Lt0qBMg;abgY+r*Q-+H#C3'VU-gRrPuL7F>hZ]Yf`$;07+mm`t=a'=1*SfpMaJI-?'mp-q6YKu*Pq59([R,AG"cg0l7$(eHfJU^88+#)l:m%:\TZW\t;VeY]iso,-dFAg*oO8X_o-#*<@38>62X)F0Gm8>6,V1a&&=)3IPEEXHB=mXsORa\Y&K:D7W#,gIp6*)A1!WS?CidduFF4S$18qZinX3+]J(2I7;*7n0n%F?+NRCroaQp;[1I/V&Zn^dJ8Y])e;T!gl?_\]V@N$*ti"Z./+djHc6mC0)-\WX82m'?]dN)TXCn1<f)jb_1_=3&YCD^qbd1[Z9&%k/s11.1A>rRp6Io_l5j_5F=7S_O9&oR:tPQm,:XFE$gU_)/nJm[rB>+S66<HX;9)L$YQ3MR:pOdC7L,-B0tWPBUjntB3(!JCR6i[EQ4'_)+pZ@e<J90'kd!]0Ul?pfAjtCr%dffjXp'odi*/@NUO]C\)>:#i5Su?j2\uq[G]&.E+9@4bQ_rs$Z<T\2r;?02fRe7gisJkY2RAXgis8eZ\Fs[M]:,a@n0:0GjMkDoXq0`p9&m.)4un:kRS3$Mm^pNp<^c^k[Jo&@P)],j3Uf9Pj3@i2N9?>VEGUZdR@C(@P)],#$n;r(TYs&RWL9D/uI%8C37iA?$)DcAX2\?A)/sF5'8n=:n=cTn\Dbgn`]6_$nl#LGlqu(pt8?[9M7W#Aiki@QRsntT-7EJ<g3K%bYBQ@E),$93NF&Ud&KRSbDB_J@8c'!9d17f-N+69kI/TZ3>o25c)O;eoWY@:;sgSo9f:$$<DFrfdKVI$V[U"+lZ/H:[$jLF`#Gkr\E1SaAWU/Vm$-X,5E&*2%r\!te,H2q<@P?:\"Z4A/q>C^'KBP*oDBbV7fCb'/5;VHeh<(f^QcHfDl_sBAf]+4>5b`ldC"WPbei1@Y)?MSk)G+Z&b&u7r!AW]_@=.`eLR!b)ugp"JVWE:h]'B+G3%2RR/<ZM_F;Zj5j>\(H*m,gPJ9#>cgZ8Vo))eNa%*2pcAge.%)#'rnSj4hX,]]R3`;:^-:`?j=Uo`cIXh28DFO_H1A1O>_/OLA-s83*H9@_$f:q<O.QZQ-K%mY=FF6$;qKX54Y6Z/kedIc_%qk49d.jpSNL7O99WV*)4GA\4s(:9,LV^sO@!pg3B7(2$03DgK*4+5uj8VJtnMs^b@"%QaXBmE85HV6T)L-J%D3`(EHo,Xg.mE:OV;h/4Y::S'f5!P>B@dfr9e]WFX,5q0lkH>RQ$;X,J+oCEZM#I`VQmF_GDlmg,[=kuO)?#5Fa".S\X)2TX$>jEC3=9Xb>\%7?<K(Dr&l,$+Y6suK38c'$oQ]j6V+J-'As]"*c-=^!pebs>"%W8.E\LGpCm]-NS%X&<C.-3VQb>JD&78LETB/SQ9cM1l/E;<nBYs9W&!1u!+st[\lsj1h`$'!L.N@9T`8F+?c#<(=)\sBKM*m4d65c_^tHcuH\aQk^cGVHNTOXNX0m'-5I7bnhUjR?c;MI'3(7D<BD<4&]=MALdOVc]JEu1UV!ei7,P]3E%GpgZof:brk`Kk:3q(Ti]o6d<;Bb%AC)#\f7^Qq"#p\YGq#!cbA6.eQ-]<DrL9\&A?aK[<jG.-Lmlb8k&7u9H8`-\60C?Ub[u+tTRd>.(=@'GgULfPT=huAn^PGUl;;V&Gp0R#?;SuFV$=tUL1/`t#Tgokq*+J2(_YYV6Cll.:X4:Te=@e"90Fo5:N)kSV[n22H,6&1if4^GjbpPI'gt8AYhGBJG[*(-LMS$H)61*pGE/EQL[SL%;TULO*o1WlTVTV.\B)3(30f#eG_I30iDI1Soqe]ld7b2.G&hVs]>R->\?%!"=c`:TB]slm-+T%9,W^/T63f%b.mG/tTPr\PUZ'p)d.YpJ1BQb8l7&OJ)?,JZ@K\>i/LA_Uoe3GLc@a>CO)KW7$7CFotYtZ.To*sVJ)P1DiPBX:FL/lo\GM)"V/'7f5ObC&@16:GlVi>^,\#E9)]T^FK';h[%Z02j@Wfi1g@?.:UF#1c5'n1W<n@$r:6c@qQW?M5Z@eD=/B-DY^2UU>)r"]2E-7djUgJ,2/Ab"K(J%4+M.\DM,)jR534$RR[4_aEKQrN1+E$gV`q>D@q$0hYTXL9PjZIb6hCY0Yn.*8e$Nu[\<H'm6Z@qcZ>4A]e6,g9!)c7J5?)M>AR(Q\H;;JD'<[?1g4@>nE4OWQAf*m2r8-[@RrSsA#R<m/q.G(YRZH+4>oGne^ZOsciNiSQkkq?=CFiL;mc/?9GE]Zd"sU^gQu]pWPcR`M(WW)N#FQ`<^.]7ebSlWmc]@eD@NFk,lQRMp<#1aVEJBI_LhckKkL[MBnY(n:+?]@B@3$7<q#B(kM@qHii``6@6n]@B@'s',1!^&J-Xb29&~>endstream
+endobj
+40 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 660
+>>
+stream
+GarVL9lHOU&A@Zck#?2m`pjmq*`K%0;mfL]jd:sMnSUn6UqeJI^[KhPSH]2uHfi"eDoN'QDTqQ\#Oo9UWuD0U:os^DP>H[_03.PS?riRq)IV-8AM#UVS`LJ*DMneK1:5V8-mdoPN.MP(1lPY@O)$?F/9V.CiS+Gs'.1Nt/+Wp<+r[Rk=Jl;W'mX1!aFnT"Z9+G%p"`!MkU1UCA)N+aV_GpZY^C2_YadU=J.HVN]sOI@EUm&W8%@A3Fnc6m1K50Ire*WN2Fl9[*;=n&aGuIK3Ebo[>t,)H[77GWD_n;n(?Cks:6MM#-W5\r.$2_0l\pSAr(CV(/de0^\#OKkGj^2DFC@sZ5pBlO*emQi0??7k7B$n=.dc)[a.[#nM7L20KUBI[=XW:`IHtBZiYi"CfATEbr/=VB(cf](@`2QaE6J0F&^?o1P*sLP--L%8f8G)6OhaI11dS8?j^noY]_97H<(ZKWNmNaCaVd>:d4a2RA)I!HMbV[On8_PbV%57C;1-usLM`6E's.TEJ!t@LJ]kb;"P3AqNdHVh)#TK5C>r"k67"2\(tp;@#'\P)KEG@"W6S2t'1<`u%s@Aa%XlC(DtH../>!\Dbn3Q/@(]Gq$gH.p$a7Tjk`,b-s3k,-fuT?tI^[Hr,>Ve*K::sBMLRU:pFH~>endstream
+endobj
+41 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2235
+>>
+stream
+Gau0DgN)&W(4GpYm&,li3AN&?WVFS-*S9=.<\8GTRE5h)DFpcuJd"Cgb1Ch>Uhi'?*fEU'O!U52E:)sp)]jt&f<_)P#r#Y8qp#;iLW'V5cj=.N*j-;lJ"8T6(jJ=J:7@-:1^.MISttBX*cB7Q#ZJc:dn'm4k`!2'M4fMM9Up)@a3WoUR%JLS8Bgqpe+/NkR,u-jljl(Lk9Y*NEbule3fm-UnNFpR-7M)`_YGjdHk8rEiKKTRn1.EU-!\Q.__l&;OU+1fD-7ZW@\oLTU4SkhkP--$r!A;]Rb&Xp,GMTdSeo.ha,I,4]]eRAhoI*>c\*=A,k`4`fHXJGjeGhr@+XoNA$>dT#B+&ki/D/1#pXE1Z$o*uIRqbTOP+U@71ROj\XHmCm/>JTl2CQ$I.I4=jr/#(-7sm!e-ePA$n4`-+?<aF;:rt9C$Grq_MR_Mn`22bO!/HdK@_=?bqUM3Cp9PX`\!,u;crMr:I*i4NY.3t'\h-)gd^"5Oh=(Iq%l"V$c/T#Z0>_\ni^5'FN5S\EuXNdY$ib^Q#0dNerVae;NsIET^`Y*;ZU\+Ad!$29TS+L3eBS@^.(0/7EIMpY&_<<mMJK"92s'p7n1KIk?qKf_Z+-)fGi,Q42`$SP^G(;j=S=H%:gDY;+b#Jm^qE=!p?3R../^9[IuVKaV:lJ%8U_<qV0l*RR3Y7c8\CFCs%'@b$Nn%?u*43"kS+r+5B\Qm+D=1%$'B<E:NlE=&_Z).r&9'/'(qE29+%3TJN55)\@$Q!nG@,bE*4f'QpliE@p5W)MRg_R<n5YiQr[lTK1S^;AC?F19'=L=.3c$MZkS48Pqf'E\(UX't,RI"1TE_#Q-'t%pk$&_i(%0A0iKi,VqT[,gR,5.*<Nd"`>3K]:75uX2_G=M5?=2*k%$fiGA<WZMLO>hOo],XLM7+'(cAYOJ8ES[Csph;0#*n7G$b?H=Q@D`Cbe2Ehst_7A]LPKMFIkoYRh@lN36CYlN<D'Y3Vtcf$^8p&H(&5ILakD$uf;]horV[i?Wa#4pL%%;(ZuYIIi^(sf1\a=YOB7B-W\"rGH/jupB=&'47+s29qDKo+rLYFCOW=dGI^\1A2W89Ked\)-KQg`)?b(T*,BjBh-!<VpX5N*#<QEkP1C?>Wi]o*amQ^8`DOIkXS$S\RYLeF44_+haJG,ZohCiRDsX\>S-;Enn2W1-tpAIQ"9*X]qXR_eIM[bdS1r6]$jpDNNeX`3)Aj4X8s3`RbiQ5O6VLMU3/.&+m\go_5\BMAeYBAT8kJk<sY8[-3&7!;Wq!^-=8<G8@Tcq7@g.f5i^7"9UPX'$s%;N*A!O<bC,DI+cV5.XA].Y"WG*D`Z]m5nXW^q>iAqEtG-(bs3O"2l#jX!OkNAe7:ou`KhIfdj`WbaJ/dXb0[b_0-t=B.Mf9F1k,hSe/E&Ygm)O[ML#;oe=q\\<>:hu87*91qgq`<YUC?MdI('do('0@_lng&BIk<hH!QhSJa(5P],iZ>prA\(9P#!cdVcuN/E"C0(PV+\m\+"$?@`#c5eUf=M5o3P[Fa%lUk7($;0jUchWuo3&h?tXMcD+u[AGe6MFY%%[hZX_XkVCnl!F,5!@c?j4&obHA9tMaYr-W9,^X;SAb\\m]@I9>UCuuMS.^Ys;dfjM@=]J/_N+r_`@c(4Uh2+#lk+r1c;=^K.?n>%oKh;(X@VWuVt!1)^#qf`Ac7(%@@Xj\k)U0'm--t89+LDJ?F1Z(?Jr2[-eAToo7=muk>13.UmPeXf;(*46Ktnrq/>`XGsbLJl,OCclRhqaljS8!rg=d]D@^Glp<?(2P[[/2hp$/ANI`=!?N"9uH"Md7ARe-![:+c9[#j)W;@\'cD;kjn[k$9?1h-^8Ci((c+[qOJJ_I?)%<,UWkFhgd>J4QfjOWeT<fJ,e?bcR<iHF`'IY*@@Rtp>*r:^--#r&)Fn*$?LpFRnF5r4k4MLVl`]J+t6IOl^X"sX#Hlr>oXRfZ$ald9n<,r\cT3@iVL@!?qeGbI'dSKDfd,mJKLgY+&M<mj\+:OUp_D"ZUlnGHZRa>;M,UeD,lm-IaqHR-@uNc3@_$[^n)U6>R\=bM&^=X^oH+fUt@D*3#>fi78-3Kp''P,KZsilb!,6[C`j/>"OVl8`,Gb3JRG<H^\XPK*P:8":EpAm+W)gV*ZhW7PRY%bh&U>aY=Mp'6`]d96m,`4`J;h,UJW$&)?r>.oJ^]8WDg<E"_HiK13$ZKb+]c-l#2r$t.Og#&/<psB~>endstream
+endobj
+42 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1014
+>>
+stream
+GasIf9lo&I&A@C2m&?2G#m`d=#u48fS%)1V)95UPQX1dIU6q$m!eQa:n%55=$HuJH3L0s<a*[],\R[tq@cM+S!PI5Rnt#mBYh9$j7)7q0]\BO%YD<m.[a'HFS>K0c.;0m(J@h;9!?hc5ZB2:+KX*F1Tn?>*KZYjXr78`OeHm?/q;mj4n3!KOZ6'$r#fcEd"]pHZFs8r?E(5(U8;uup`?2+lZWlbS?^BmE8bHCOGiQqpj)sSkVr9#uZTGP*e&Eoq=9CKL;sBo_o+a/:"+5ca@W'=j2TN=-[0Dpc+eMVp.7ThPjd@Ar0gdCB@SESr&JcZ=?`0h>B5(EE:_\U@8HVNSStk`4*gP''0JDj9m<%4jb-gfOTAdg!ZBVR;P:<;qL`+Quk5pdNEBM3Y0!KUG"+tT`;@k!:Z3"?R$E2MC,pj)Q'?`Wj-Z\:d:X+dI!\Bl2;56'FX8ge9;*d2%=lfKpkWQe*W\NGf&3#6g!kU)fl).Zl:\(%_Ym!JI6tl)e,smge7p@q7'pR;9)V9sYnd6ksn$c?.$C%N_ZeMA-@+9U'Nt16n#iUDW:A`dPq'?N7o=KdTpPl/G`2I4-#O<G7KCEs;?Z28R-J+6+n=Zd2d8f4j9"3O?Ut5qqQg6p/*;rZ3eU"JAHI5\8d),n'9?PiZ3]Yj,$-FQjD66HM\.@0_c+Ugu5#'8i2@N6n!.L?U[^AV2_9oi4^V[FejYo;m-LPug$9Co#Xa1C[@f^[lf3e/I_%)UJJ[sC8feqm_ZQ_"*eiRXtm/I.B'X:`1ZXHmRqn;EQ_neAE=IO!`(H=BY%HXqCdo>,\E]L/?"l.5uQ@Z:pR)XAf.[5(Vp\7Qe(C&L@cSY6Xi9q`]ku&nT@*[Wh[W^<8mt2[j7VQ-n`@nmum3>_3c9T9Vr.+fST6kA4bNCje_="T7__Jg'bfD1fb^ZLPA)qYV&X,"L3)6>eDTX/eR%$KSic>co9_3R46t=Ld+u/6l;4'.q#k/pN4W0.:WI;U/^-<"qH+[PX++mQ!SH~>endstream
+endobj
+43 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2419
+>>
+stream
+Gb"/(>B?;o(4Q"]3)<c8)&n[+>Lu(75+[!K)..,kX7DthFe^\#J8i.#r>l7Vi.U$g8aYr``YHt0NhfJ6qAkuSK0Md(N\Z.V8$K0'&.4J&+KjhCiuMAf*dp&S6?bk!!E`dgG[Um/g0'2k$hlSM3OkbO_JgO4b-`5K"Wh44\Uijq^-@"3_S]6[6(ld>c12VZeFI"LoKTQb63?%sC8WD?%]%d3&rV)%&8,Wpr!U^9MbPAR1C4-XNRa1nE)oDaO?A\#`Sk`SS!>GKGV5Bu71M89M##renP=E-8Sp]G_o&l&6N$'hT@f/+#t@jB8!TH%DMKb3M1m<(W(Nm@a/=LSJV@j6*^6Q]Wa!4uPQQ4>qjIRh/$70`;T^^#/@^.TI(I(Ec]eWQoie4:&i)Vc-/\9nipd/s(m+2hAF5-nGcTBl!9H2$;T.S,<Z!$B;g^m]D1BDkeP?QVTa\#!3sY.h2c^tr-a]gQfla'3s(s%qO'8]]P\e8k7>9;Zj,@SPc5QX(<-VWN5V:HMB<[Kd@mT?snP>M'G$IFpnc8HH(]0H;]-V:2oW)'8o,.8'W27RZ_[:RO2#230f0rV,*&9-LbTsN,>RQAF0DSDXWR3rt<4q_p,;Ra:Qu_b8>BqVWr!\C?f1L[=`O?ScPBe!_^Wpa[/#pM8[RU1GVohO93Gp=T8_&sR!l25O:K4"-6q&a(Wru9e/X=OB$u1g?=dATY?34R_>SQuAb3N_!QIX,?(&>;:Z8U!,[4^`U*eNoHP=:@WDF[.cb[\_OR&<TEhDdX=M@$\g]bNOlQ&YVK)kI?-TUKF3c>M$/W3._1k&k0]mjrorH%]QX&gggN:q(&(`6,QnKbJ\+#F&6YJr-Zlc$=pqe(NO^2_D&mD-H:m/7U#smEcF;$-!<iTJ<$'qnt/82.E7CZP9F6Ol*L(n[V08ZDHpnIr8.50\&NhUO/Nh/h+h2afA+b[6cU[+oP$n,"Dl5;cJ&qA5ON(V//&1:HVl\1c<4'mIC>=17I+SKNGLZUIpbS?$9B@9Ji0C>22Md8I,2<pUiu!NtU(m4RXX"8)4t!K#"2]V%LjG':t0qWTs"(rr;S:Po^>,hUIF!W#"Yu<VKan)@]BTG".'.OdUp%1ECLj+VIP)e>jJXVaLGsaINgOUS6pta9W!<_B:'?;\UGf;[alV;ZuO`Yg]q%!sD2[2Qn#W0>3[#IoH(N6#m':\O51[YC.cpL32#Wm2oWapX+K+?&)Ij%X^7dYAN6BoVt9`--i=;%boul\6ZQ[EBSC[A9)Oh[ap[frn!rYAU0%(;"Y]-p,2C9^j-7@2OS$;J78m`K6.>kpE%f2/EmHqOuf''4k_ST5_dft^r_o)?=[X3j7UNAbF*\-OKen&"ga)D)bf5arRhWrM^FKfS)cJ`'Sd0[278)W$d",jfqbTB,dPegqK$1V=1&cX04^dea`:(C/]$``GarItHWm:+fT`nnUg3PImp[%=S\)n:[\;D><QKo#aD/n1K;nP@,\[(;[m<*=*6ESDWOE@OR'DRPl2E)C**Vk$na7Wl5Mb1%_Sa>G=-l^,=3GCse&;,Kk^`;T!#mhMl&s;q/C1dF](5)Vp)<bN>db.tDF3[o7OrOKHSc]=ER^DF;FZs[)p*/U]EC7@&op$4WZ?h[Wlbl!4F0bb?6bNE&K")USf%r""'rcU,a!.j]Q=IN1SFWn+J1Q>p1K2l<'2@+>sJN3*W4GrSm*-0[9C@+8D[a9n)mrpJ/mW'\qG+A'e\-?X=SYpNrHq%Ji$:hJW5N9PVl/=d^s27_Sb.>kFd&9kR$tUC?fo]T;h!t6Z;nm(^qKVe!3V@Vj[(@c=A3([Tgt_Ga(Wk%lCXA:S1E:MlY.'8E1BD(n3uD#e;:CFH&V]?gQ[to_;'uNT;I1;#SWO<[2PSCkH;sa\*sifY&^R1C[1MR8Q7S_IUS,\84dIi2VuD!bNd-`'j8Bptfn$5Q.kBs/Zqdi[j"Ci_MG$D52G?7[OK6NhP9Q7`pNU(!fg$j4]0"?qVq^BT,i*UY'VVplgoWdk.<SY6eudCVSXWOd3qojBP1Rr*LO1/3k,]s,eKo;8m%P]3o?4i0G:lTooOOl.TMXQt^0E/X*2/G]Z*/\d,3#Cse%iT$PRa:T-*=(L='T^MUSK4(/kqIMq!=T4QcYUTS@.5TpY]AP1ieBYgQ?#5-m.K)#d+fOuEhm8rM]@@?Qas51?Ji/u<7e?F39FA%4iob606oe6:=Ch&6j%XDhc@0nuL+!Q\ED&*bus4sPI>pQD-YUVZS,l8,FE/LYA^fcmeR34R[&d&OfDso">R$VN,d+=Z[%2MOF/9L'0Dj:Hj).B-CI@I$Q0oI7:I/4%LeA/ALfVpBmkqpl&7>:T-_^h[tB77s=mUs.#<C;R6TIb+O<f0e=B=2cDIsl>5[bF_`!B^*Wg\!QW&'b,]lLs0"h`Dod[/~>endstream
+endobj
+44 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2567
+>>
+stream
+Gau0D>BALh(4OT53)<c(`!Ec45YN6-L^bC`%QG;,G,tPh8.B76$R5s6bcfpmkcRT5ERd%O@#Jpqq9Jq#/P*pCa?H/FkgP^+'1'L.jdLk%RC'W'nabKXmkiecM;Eb>H_=TO:"iDcg:Bk6Rs-$D[O,g;BN*7,FC>V0$HOt-RVqlsoliUU^FKEqpjB\7?8De54DDLq+).S`K>'eEL0kJqa@_=51rC6cGWVRVhdisI<`)JM@PFH.1.bJ>UY+7GWH-F8XQX"J%<fGm<1(hXMaG#.H`hZjbMR%0$]ArEY].$'7)(>6:2UaP]CF$FR&#&K/8u'p6A*8ZVSmN8<1U=9N#q<>SJWW,C]I2u)["P5%>H_kr&.4cG6kV@64>`_*`&Z>l#JhWd<n:4o@Xtlr&1!LcR4nlQ6r'7U%S8:60>E'!-;<Xgo$@`#K21r=Vb9"0m&$#f"^-:rlMjhYQpVf"bonLX_BaMi#a1"f-j\ja6"*@JcS1VS$/S`;4qHe1g\T%+[WtV\9U?T^dcYMTSPC#N!d^lS1$S[ll&U+s(X&_P+bP+4EmPu9"#A0OQ?1/``0o\XHHj'-AieRP:OuRdURJ;8'd!lQr_TuFCfjL:4sH%H7<_d\iC"thQ)%s/Am^Bm65niJ0Bn8orMCjYi;J8Zgs/!ac#1o@hbg*c]lqONk]e'HP-mk>6t&!Jg`gS_,P?FL]3DcH1!k^/"aMsLQL-+GhB$X]J:")_U>W8Oi'BgVV;',m1*!oIHJ*OOR>A7BBpimj%7[$VJ:2+0;8fr_Y\-5q^^nnSV'bPp\>I+?BQE^6AhOdW[NklW2YE']F]3X\eM8tEi4H2Xe_N-=,#n04L,jNiMuT9KKJG/[+hd3cRE?C+@DfZG)G[->&"e'%ghOZ3LSFc&ZW&,WCi(NrNTEqb!CTCFL/K:T2jZ<Y^B>p'l"uNNt*pec2jk2=b_Im&kW0%^J",;7_Bq_s&*k/0`qIWLl?1m#Z!dc"71O/cY'%THfmJ.2:B6mQ4CLQAS$ZmW:l$8XPCVX#C5ZHO`EK-Wp"d(mhtB?cDs*-%UaD(Lc@t'd?:N*TaRm%`e@Y;Ur,Gnf;eD_HWC6BH`g\?qe$L$EKh`>#ji%dItBI?;A`7^%lCkedZZ^=-r%<%;/Y!H2ObLV:tNJl8oFdHkG"VHcS+PSVoqF(96-dm,5^;Z4GP[b\C"n/7BRGE&/;cPLF@Vg@hTIKf`0n0mk9eHE10/E;M2Q[nfng@0LOPrBRd-C2E&"6363f.94h\UBJ16_-,%!ff1Wtu/b*>YeCI,H@#-]Ld=<Co0LQ"tBYtAj(i9rr&8_gb#]0]=4+*rAYopicZ9[C1lCkTPfC(\!`UNYq#,r64"il8(k3PJT)T(bM^S@nloe_SZ0dD,Orsdi5BAN^\)S4=B9j)$q<$s&->n+V*>.j8LU/\#o0_BAoS/[*L3ctYZZ#o4SUX.DB;RB*.H<;`<ZfNJb7uNikIXddB/4LKjNFJ>=/0>YfJ!X8q'4-3J&`CnV?Uou>/!L\=H-Y?dfcl2CqOjPMOgahK);H##OOc\cV6<-:qJV/e$7*G\BuT:faPDJ/Tb23?[F6^n,jOuP;J&na^uJUUG3M$PkL'$Yp)Da,n96;%grCk=cHgX&;*,ZYo+kD0p/(*m[V==\_1+Ld[k%0d66f]aH]8([oE+J7L#s8)5pcoJ4?H+0h)'EZNSQB$H3NO3)eSHoglSNI>eKEEm5F.Gb/N6ZBN\6?o2hl!^0qe,j5>cpmLCh31h04iFsoq=>ee;@`Z$8mFNp1,?*1r?6"gd8]$9Q<)``8Rp1;5q6cVPhY8!uH-H1pMBKr[$RSp+NF$k?`U75?$<cMeTjq',#HOuRdcn_883St3QBm_4WH8$?2WKTR06b]-4>Yip;D[k:*A=J<#hYN"2ho#m_%$-d.!clg08XHl2?/%%kB](D2W=rHX_jT23Ms+kEd<CM2$pN_K#J!?Q6=Mq-+EfF"4eY"6r63QU489@1,/&N-!@$"K4",.HGV)c:Ia+qNis"QN^4)M_r%Zl5mI<?;?E$sc=[$/&"5,uB&hd6*M5Y'QSn>8MheTSe^#TMLr</@1+*&8"lQL(Fd;hoL=%i8!>nj2B(UJ=pVR+rAQ#Jqp2k<pe!@-Bnf<G7>/On2ri<WbE0@3<3!\;=S#?m((n;2\8[$9Vu.IS$9e@,tMh#ANNQBfsZ$<>I[Z<MiU.DCb6)o[CG!]L@KUR:@H:lK6@git!^-6?$0]em9d<Nu+o&W^Fi",g#,2d5-VEab5\CltmdAIuBZo'dMQJ@k,=(ET6q@<CuR9R4a48dr'D%q+\*';=9p\N9NN)go6:'T,+0]E_#ORWP0I.cjrli$a?-/'5a]JKY8ljJA5,&a1^)gQPAMkJ_82F#5,C/R8dIh3u_YDY:?h_CfGY4FMiCU%9p@o0p4^rI!#Jg=Z&8_bTc1+KK8'O#N`p22]jYh='p];C64""$PRY'tQ<-qmK@d@(li9bTCHK3?QKq14NA(eGJdfL[j_G>d*6G[XQL>D!;%1nl9CLrr(CFY'>(IVn:>cFF-*`V7YL0m(RkB,G8c.`9>gSiq2[=)hdr+~>endstream
+endobj
+xref
+0 45
+0000000000 65535 f 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000341 00000 n 
+0000000546 00000 n 
+0000000623 00000 n 
+0000000828 00000 n 
+0000000933 00000 n 
+0000001138 00000 n 
+0000001343 00000 n 
+0000001549 00000 n 
+0000001755 00000 n 
+0000001961 00000 n 
+0000002167 00000 n 
+0000002373 00000 n 
+0000002579 00000 n 
+0000002785 00000 n 
+0000002991 00000 n 
+0000003197 00000 n 
+0000003403 00000 n 
+0000003609 00000 n 
+0000003815 00000 n 
+0000004021 00000 n 
+0000004227 00000 n 
+0000004297 00000 n 
+0000004611 00000 n 
+0000004791 00000 n 
+0000006615 00000 n 
+0000009946 00000 n 
+0000012600 00000 n 
+0000013308 00000 n 
+0000016315 00000 n 
+0000019173 00000 n 
+0000021857 00000 n 
+0000023088 00000 n 
+0000025471 00000 n 
+0000026994 00000 n 
+0000030548 00000 n 
+0000031544 00000 n 
+0000034927 00000 n 
+0000035678 00000 n 
+0000038005 00000 n 
+0000039111 00000 n 
+0000041622 00000 n 
+trailer
+<<
+/ID 
+[<8bd6ad56dc776dcaab32c4e4ed1ba86c><8bd6ad56dc776dcaab32c4e4ed1ba86c>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 25 0 R
+/Root 24 0 R
+/Size 45
+>>
+startxref
+44281
+%%EOF
+   HAMROBOT
+Master Architecture & Implementation Guide
+CURRENT • TARGET • MIGRATION • FUTURE
+Single source of truth
+Working system, approved target, exact implementation order, Chat/Widget boundaries, AI + RAG + memory strategy,
+payment/BYOK, security, tooling, tests and solo working-day estimates.
+Operating rule
+CURRENT — preserve what works
+TARGET — build only the approved direction
+MIGRATION — execute in this order
+FUTURE — do not build yet
+Version 3.0 • August 2026 • Implementation master reference
+Page 1
+HamRobot • Master Architecture & Implementation Guide
+1. Contract & Non-Negotiable Rules
+Layer
+Meaning
+Rule
+CURRENT
+TARGET
+MIGRATION
+Built and confirmed
+Approved direction
+Ordered implementation
+Never describe it as planned.
+Do not claim it already exists.
+Do not reorder without reconciliation.
+FUTURE
+Explicitly deferred
+Do not pull into current work.
+No parallel plans
+If a developer or AI proposes something conflicting, reconcile it against this document before coding. Extend the current
+system; do not create a competing architecture.
+Rules
+• Extend existing schema before creating new entities.
+• Keep one shared AI/provider boundary; no parallel provider integrations.
+• Record actual provider usage before enforcing usage limits.
+• BYOK is optional and premium; it never gates normal Widget use.
+• Keep payment, domain security, Knowledge, AI generation and usage as separate concerns.
+• Preserve tenant isolation, Widget behavior, KB CRUD, eSewa, dashboard responsiveness and dogfooding.
+2. Product & UI Surface Map
+After sign-in, HamRobot has two primary areas: Chat and Widget. The running assistant can also appear as the right-side
+Widget inside the authenticated app. This is not a third product.
+Surface
+User
+Purpose
+Chat
+Logged-in owner
+AI workspace
+Direction
+ChatGPT-like; future memory, PDFs/docs, own/cooked models.
+Widget management
+Right-side in-app Widget
+Customer-facing Widget
+Product boundary
+Logged-in owner
+Logged-in owner
+Anonymous visitor
+Paid website-assistant SaaS
+Support/demo/dogfooding
+Website assistant
+Overview / Setup / Design / Knowledge / AI / Domain / Usage / Install.
+Same Widget infrastructure; HamRobot's own running assistant.
+KB fi HamRobot AI fi model only when needed.
+SIGN IN fi HAMROBOT APP
+CHAT = owner's AI workspace
+WIDGET = customer's SaaS management
+RIGHT-SIDE WIDGET = running HamRobot assistant
+CUSTOMER WEBSITE = anonymous visitor
+Page 2
+HamRobot • Master Architecture & Implementation Guide
+3. CURRENT — What Exists Today
+Baseline
+The current application is the foundation. This plan is an extension, not a rewrite.
+Schema
+orgs (id, ownerUserId, name, slug, embedKey, businessDescription, allowedDomains[], isPaid, createdAt)
+districts, properties, knowledgeChunks — org-scoped RAG/pgvector
+chatSessions, chatMessages — dashboard Chat
+widgetSessions, widgetMessages — Widget conversations
+paymentTransactions — one-time payment records
+AI
+• One shared GEMINI_API_KEY environment variable for current AI paths.
+• lib/gemini.ts handles embedding; chat/route.ts handles generation.
+• Generation has a fallback-candidate model list cached for roughly 30 minutes.
+• No AI Gateway and no authoritative per-request usage ledger yet.
+Billing
+• paymentTransactions + orgs.isPaid.
+• eSewa ePay v2 sandbox is tested end-to-end, including signature and independent status confirmation.
+• Current documented one-time price point: NPR 999.
+• isPaid is tracked but public /embed does not yet enforce it.
+Widget
+• widget.js + EmbedChatWidget.tsx through /embed.
+• Anonymous localStorage visitor identity or host-provided data-user.
+• Responsive floating card, expand/collapse, close, position and color customization.
+• Domain allow-listing via Referer against orgs.allowedDomains; allow/block behavior tested.
+4. CURRENT — Dashboard, Knowledge & Dogfooding
+Dashboard
+• Supabase Auth with link-based email confirmation.
+• Established navigation includes Chat, Widget Setup, Knowledge Base and Payment; target Widget IA expands into
+Overview / Setup / Design / Knowledge / AI / Domain / Usage / Install.
+• Chat history/account information remain in the sidebar; mobile dashboard uses a hamburger drawer.
+Knowledge
+• Text content add, edit/re-embed, delete and server-side ILIKE search are working.
+• knowledgeChunks + pgvector are the current RAG foundation.
+• PDF/document and website/live-content ingestion are not built yet.
+Self-dogfooding
+hamrochatbot-support is a separate organization/account using the same Widget technology for HamRobot support,
+demonstration and dogfooding; it resolves its own origin across local/production and skips /login.
+Regression baseline
+Page 3
+HamRobot • Master Architecture & Implementation Guide
+Multi-tenancy • domains • eSewa • KB CRUD/search • Widget responsive/expand/close/position/color • dashboard
+auth/history/mobile • hamrochatbot-support local + production.
+Page 4
+HamRobot • Master Architecture & Implementation Guide
+HamRobot • Master Architecture & Implementation Guide Page 5
+5. TARGET — HamRobot AI Core
+The long-term product is not “Gemini everywhere.” HamRobot should become a response system using deterministic code,
+RAG, conversation context, selective memory and a model only when generation is necessary.
+Target response pipeline
+USER MESSAGE
+RULES + TASK UNDERSTANDING
+DETERMINISTIC CODE WHEN POSSIBLE
+RETRIEVE RELEVANT KB / MEMORY / RECENT CONTEXT
+BUILD SMALLEST USEFUL CONTEXT
+HAMROBOT AI RESPONSE CAPABILITY
+EXTERNAL MODEL ONLY WHEN NEEDED
+RESPONSE + REAL PROVIDER USAGE
+Core rule
+Code first fi retrieval second fi model last. A KB miss does not automatically mean “call Gemini.” It means the factual
+retrieval layer did not find enough evidence.
+Layer responsibilities
+Layer Job Examples
+Deterministic Solve direct machine tasks lowercase, integers, formatting, validation.
+Conversation Short-term continuity recent messages, rolling summary.
+Memory Durable useful facts preferences, decisions, important facts.
+RAG / Knowledge Retrieve factual context knowledgeChunks, future PDFs/docs/web sources.
+HamRobot AI core Understand + choose response strategy intent, context selection, response generation.
+Provider/model Generate language when needed Gemini now; HamRobot model/others later.
+HamRobot • Master Architecture & Implementation Guide Page 6
+6. TARGET — Widget Reply Intelligence
+The Widget should stop treating every question as a Knowledge Base lookup. A KB miss is a routing signal, not
+automatically the final answer.
+Widget decision flow
+VISITOR MESSAGE
+CLASSIFY: SIMPLE / KNOWLEDGE / GENERATION / MIXED / UNSUPPORTED
+SIMPLE fi CODE/RULES
+KNOWLEDGE fi VECTOR/RAG
+GENERATION/MIXED fi KB + HISTORY + MEMORY
+CAN HAMROBOT ANSWER?
+YES fi RESPOND
+NO fi EXTERNAL MODEL IF NEEDED
+Request Preferred path External generation?
+“Make this lowercase.” Deterministic code No
+“What is the refund policy?” KB/RAG Only if wording needs generation
+“Rewrite this professionally.” Generation task Maybe
+“Summarize the policy.” KB + generation Maybe
+“How many properties?” Data/KB retrieval Only if needed
+Out-of-context usage rule
+If application logic returns a deterministic “no relevant context” fallback, there is no Gemini generation call. If a model is
+called to classify/generate, record that provider request's actual usage.
+HamRobot • Master Architecture & Implementation Guide Page 7
+7. TARGET — RAG, Messages, Memory & Learners
+RAG, history, memory and generation are complementary. They should not all be dumped into every prompt.
+Context Meaning Use
+Recent messages Short-term continuity Small window.
+Conversation summary Compressed old history Replace long transcript.
+Memory Durable useful facts Retrieve only when relevant.
+KB/RAG Org/project facts Vector search + relevance threshold + small top-k.
+Future PDFs/docs More Knowledge Chunk/index through existing Knowledge architecture.
+Future live/news Fresh sources Separate ingestion/refresh design later.
+Context budget
+system/rules + user message + recent messages + relevant memory + top KB chunks
+More stored knowledge must not mean larger prompts. The context builder selects the minimum useful information.
+Memory rules
+• Do not save every sentence as memory.
+• Store useful preferences, facts, decisions and recurring context.
+• Retrieve memory only when relevant.
+• Long-term learning can grow retrieval/memory stores without retraining a model every time content changes.
+Future Chat learners
+The Chat workspace may eventually manage conversation learning, PDF/document learning and live-information learning.
+“Learning” should be treated as a context/knowledge capability unless a separate real model-training project is approved.
+8. TOKEN EFFICIENCY & FREE-FIRST STRATEGY
+Priority Technique Benefit
+1 Deterministic code No model call for simple work.
+2 Relevance threshold Avoid irrelevant context/generation.
+3 Top-k retrieval Only a few chunks enter prompts.
+4 Context budget Prevents prompt growth.
+5 Recent-message window Avoid full transcripts.
+6 Rolling summaries Compress long conversations.
+7 Selective memory Only useful durable facts.
+8 Caching where safe Avoid repeat retrieval/embedding work.
+9 Actual usage ledger Shows real provider consumption.
+Free-first foundation
+Need Use
+Web/app Existing Next.js + TypeScript
+Auth Existing Supabase Auth
+Need
+Database
+Vector search
+Managed generation
+AI abstraction
+Usage
+Versioning
+Testing
+Use
+Existing PostgreSQL/Supabase
+Existing pgvector
+Existing Gemini initially
+Small TypeScript module
+Postgres aiUsage
+Git
+TypeScript + integration/manual regression
+Economic principle
+Minimize external model calls rather than building the product around a paid provider. HamRobot's stored Knowledge and
+memory can grow while request context stays bounded.
+Page 8
+HamRobot • Master Architecture & Implementation Guide
+HamRobot • Master Architecture & Implementation Guide Page 9
+9. TARGET / FUTURE — Chat Workspace
+Chat is the owner's AI workspace and should evolve independently from Widget monetization UX.
+Capability Status Direction
+Normal chat Current Improve conversational quality/context.
+History/messages Current Recent context + summaries.
+Text Knowledge/RAG Current Keep foundation.
+PDF/document upload Future Ingest into Knowledge/context.
+Pasted content Future/desired Temporary or saved context.
+Memory Future Selective durable memory.
+Learners Future Conversation/document/live information.
+HamRobot model Future Own/cooked model behind same AI interface.
+Advanced model selection Future Provider-neutral, later.
+Workflows Future Separate scope; reuse AI infrastructure.
+Knowledge growth „ model training
+Adding a document can make HamRobot more informed through RAG without retraining an LLM. Actual
+training/fine-tuning is a separate future project.
+10. TARGET — Widget Management & Payment UX
+Area Question answered
+Overview What is my Widget's current state?
+Setup What remains?
+Design How does it look?
+Knowledge What does it know?
+AI What powers it?
+Domain Where may it run?
+Usage How much managed AI is used?
+Install How do I place it on my site?
+Billing What have I paid for / what can I buy?
+Settings What account/org settings exist?
+Payment decision
+There is no free operational Widget. The agreed implementation uses a soft enforcement boundary: owner configuration
+may happen before payment, while public /embed refuses to serve an unpaid Widget.
+Public Widget gate
+OWNER CONFIGURATION
+PAYMENT SUCCESS fi isPaid
+/embed CHECKS PAYMENT + DOMAIN
+PAID fi SERVE WIDGET
+UNPAID fi BLOCK
+Managed AI is the default. When its allowance reaches zero, the Widget clearly pauses managed AI and offers Buy More
+AI or Enable BYOK.
+Page 10
+HamRobot • Master Architecture & Implementation Guide
+HamRobot • Master Architecture & Implementation Guide Page 11
+11. TARGET — Gateway, Usage & BYOK
+Usage is based on actual provider work, not simply message count.
+Correct usage flow
+MESSAGE
+DETERMINISTIC? fi MAY FINISH WITHOUT PROVIDER
+OTHERWISE RETRIEVE KB / MEMORY / HISTORY
+MODEL NEEDED?
+PROVIDER CALL
+RECORD ACTUAL USAGE
+RESPONSE
+Suggested usage dimensions
+orgId • surface(chat|widget) • mode(managed|byok) • provider • model • tokensIn • tokensOut •
+requestCount • createdAt
+AI Gateway
+lib/aiGateway.ts
+resolveProvider(context) fi mode/provider/model/credential
+generateResponse(context, prompt, contextPack) fi response + usage metadata
+Day-one rule: wrap today's Gemini generation without changing behavior. Later the same seam can route to a HamRobot
+model, another managed provider, or customer BYOK.
+BYOK rules
+• Premium optional add-on; never required for normal Widget use.
+• Provider examples: Gemini, OpenAI, Claude; future providers stay behind the same interface.
+• Validate server-side; encrypt at rest; never log or return raw keys after submission.
+• Support replace/revoke; invalid/revoked credentials cannot silently activate.
+12. DATA MODEL — Extend, Don't Rewrite
+Concept Decision Home
+Widget Do not add orgs already represents current org/Widget identity.
+WidgetConfig Do not add now Existing design/config props.
+Domain Do not add orgs.allowedDomains[].
+Conversation Do not add Existing chat/widget sessions + messages.
+KnowledgeSource Extend later knowledgeChunks + sourceType for PDF/web.
+AIUsage Add aiUsage when usage phase starts.
+UsageAllowance Minimal orgs.includedTokenAllowance initially.
+Billing Extend later paymentTransactions + productType when real products exist.
+AI config BYOK only orgAiConfig.
+Credentials BYOK only apiKeys, encrypted.
+Installation Defer New only when detection exists.
+Concept
+Workflow
+Decision
+Future
+Home
+No schema now.
+Architecture „ tables
+A service responsibility does not automatically require a database table or microservice. Keep modules inside the current
+application unless scale/ownership proves otherwise.
+Page 12
+HamRobot • Master Architecture & Implementation Guide
+13. END-TO-END SYSTEM FLOWS
+Target Widget
+Managed Widget
+VISITOR
+/embed fi PAYMENT + DOMAIN
+ORG + WIDGET CONTEXT
+RULES / DETERMINISTIC
+KB + MEMORY + RECENT CONTEXT
+HAMROBOT AI
+MODEL ONLY IF NEEDED
+RESPONSE + USAGE
+Target Chat
+Chat workspace
+AUTHENTICATED OWNER
+CHAT MESSAGE
+RULES + TASK UNDERSTANDING
+HISTORY + MEMORY
+KB / FUTURE PDF-DOC CONTEXT
+HAMROBOT AI
+MODEL WHEN NEEDED
+RESPONSE + HISTORY / SELECTIVE MEMORY
+Relationship
+The Widget can consume the same HamRobot AI capability/context architecture as Chat. It should not permanently require
+a customer's external API key to be intelligent. BYOK is a provider option, not the product identity.
+14. MIGRATION — Exact Build Order
+Phase
+Work
+Solo estimate
+Exit
+P0
+P1
+P2
+Baseline + regression
+AI behavior/context + Gateway
+/embed payment enforcement
+0.5–1 day
+2–3 days
+0.5–1 day
+Current behavior captured.
+Shared AI seam; no regression.
+P3
+P4
+P5
+P6
+P7
+P8
+Setup Center / IA
+Usage recording
+Usage UI + exhaustion
+BYOK
+Billing products
+Installation detection
+1–2 days
+1–2 days
+1–2 days
+2–4 days
+1–2 days
+1–3 days
+Unpaid public Widget blocked.
+User understands state/actions.
+Provider requests recorded.
+Allowance visible; zero pauses managed AI.
+Secure optional provider routing.
+Real product types only.
+Install status independent.
+Page 13
+HamRobot • Master Architecture & Implementation Guide
+Planning range
+About 10–18 focused working days is a reasonable solo-build planning range for this migration if the existing code remains
+near the documented baseline. It is a planning estimate, not a deadline.
+Page 14
+HamRobot • Master Architecture & Implementation Guide
+15. PHASE PLAYBOOK — Steps & Tools
+P0 — Baseline
+• Git branch/tag current state; run auth, Chat, KB, Widget, domain and eSewa regression cases.
+• Keep a migration log: change fi reason fi test fi result.
+P1 — AI capability + Gateway
+• Define internal request context: org, surface, session/visitor, user, task.
+• Separate deterministic rules from model generation.
+• Add context builder for recent messages + relevant KB + future memory.
+• Wrap current Gemini first; then route Widget KB misses through the same HamRobot response capability.
+• Add relevance threshold and context budget.
+P2 — Payment
+• Check org/isPaid server-side at /embed.
+• Keep owner configuration accessible before payment.
+• Test paid, unpaid, missing-org and invalid-embed cases.
+P3 — Setup Center
+• Build Overview/Setup over existing state.
+• Show Payment, AI, Knowledge, Design, Domain and Install.
+• Do not auto-redirect to Design.
+P4/P5 — Usage
+• Create aiUsage after the Gateway path is stable.
+• Record one authoritative event per provider request.
+• Add minimal allowance; show used/remaining; stop managed generation at zero.
+• Offer Buy More AI or Enable BYOK.
+P6–P8 — BYOK / Billing / Install
+• BYOK only after usage is trustworthy; validate/encrypt/revoke and route through Gateway.
+• Add productType only when usage top-up/BYOK activation are real paid products.
+• Installation detection is later and independent of core Widget operation.
+Tools
+Existing Next.js/TypeScript, PostgreSQL/Supabase, pgvector, current Gemini integration, Git, browser/devtools, TypeScript
+checks and manual/integration tests. No paid orchestration service is required for the core plan.
+16. SECURITY & REGRESSION
+• Authorize organization-owned Knowledge, conversations, usage, billing and credentials server-side.
+• Never rely only on frontend route visibility.
+• Prevent cross-org leakage.
+• allowedDomains controls where Widget runs; Knowledge controls retrieval; AI controls generation; usage controls
+allowance.
+• Public /embed enforces payment after P2.
+• BYOK keys are server-only secrets: encrypt, never log, never return after submission.
+Page 15
+HamRobot • Master Architecture & Implementation Guide
+Regression gates
+Area
+Must remain true
+Auth
+Chat
+KB
+Widget
+Domains
+Payment
+Dogfooding
+Login, confirmation, dashboard and mobile navigation.
+Existing chat/history.
+Text add/edit/delete/search.
+Load/expand/close/position/color/responsive.
+Allowed work; blocked remain blocked.
+eSewa flow and verification.
+hamrochatbot-support local + production.
+Gateway
+Usage
+P1 no unintended behavior change.
+Provider request recorded correctly once.
+Page 16
+HamRobot • Master Architecture & Implementation Guide
+HamRobot • Master Architecture & Implementation Guide Page 17
+17. FUTURE — Explicitly Deferred
+Future Direction
+PDF/document Knowledge Extend existing Knowledge/chunks/source metadata.
+Website/live Knowledge Later source type + ingestion/refresh.
+Memory Selective durable memory after core context is stable.
+Learners Conversation/document/live-information learning.
+HamRobot own/cooked model Future training/fine-tuning behind same AI interface.
+Advanced Chat model selection Later; provider-neutral.
+Workflows Agents, extraction, actions, conditional routing.
+Teams Multiple users, roles, permissions.
+Advanced install monitoring Continuous diagnostics.
+Subscriptions/premium products Research when product economics require them.
+Keep future out of current work
+Future features may reuse the AI/RAG foundation, but they must not be pulled into the current migration without an explicit
+master-plan update.
+18. SOLO BUILD SCHEDULE
+Day Focus Deliverable
+1 Baseline Regression checklist + Git tag.
+2 AI context Request context + deterministic boundary.
+3 Gateway Current Gemini wrapped.
+4 Widget intelligence KB miss fi HamRobot AI path.
+5 Efficiency Top-k, threshold, context budget, recent window.
+6 Payment /embed unpaid gate.
+7–8 Setup Center Overview/Setup UX.
+9–10 Usage aiUsage + provider records.
+11–12 Allowance Usage UI + exhaustion.
+13–16 BYOK Secure credentials + routing.
+17 Billing Product types if ready.
+18–20 Install/hardening Detection + security/regression.
+Working rhythm
+Finish each phase in a testable/deployable state. Do not start BYOK while usage accounting is ambiguous. Do not start
+complex PDF/live ingestion while the response pipeline is unstable.
+HamRobot • Master Architecture & Implementation Guide Page 18
+19. DEFINITION OF DONE & HANDOFF
+Area Done means
+AI core Chat and Widget share a clear HamRobot response capability/provider boundary.
+RAG Relevant chunks retrieved selectively; irrelevant context excluded.
+Memory Only relevant durable memory is retrieved when implemented.
+Context Bounded budget + recent-history strategy.
+Widget fallback KB miss can route to HamRobot capability instead of repeated fallback.
+Payment Unpaid public Widget cannot operate.
+Usage Actual provider requests recorded server-side.
+Allowance Managed AI stops clearly at zero; recovery shown.
+BYOK Optional, secure, provider-neutral, Gateway-routed.
+UX Customer understands Widget state and next action.
+Security No cross-org leakage; no raw API keys exposed/logged.
+Regression Chat, KB, Widget, domains, payment and dogfooding remain working.
+Handoff questions
+• Is this CURRENT, TARGET, MIGRATION or FUTURE?
+• Does the existing schema already have a home for it?
+• Can it be a module rather than a new table/microservice?
+• Does it preserve Chat vs Widget separation and the right-side in-app Widget?
+• Does it minimize unnecessary model/token usage?
+• Does it preserve tenant, domain, payment and credential security?
+• What regression test proves it is safe?
+• If it conflicts with this document, reconcile before coding.
+Final system definition
+HamRobot is one authenticated SaaS application with two primary product surfaces: Chat (owner AI workspace) and
+Widget (paid website-assistant SaaS). The app also runs its own right-side Widget for support/demo/dogfooding. The
+long-term AI path is HamRobot AI: deterministic logic + RAG + conversation context + selective memory + model
+generation when needed. Gemini is the current managed engine, not the product identity. BYOK is optional. The migration
+is additive and ordered. PDF/web Knowledge, learners, own/cooked models, Workflows, teams and advanced monitoring
+remain explicitly deferred.
+ONE FOUNDATION • ONE MIGRATION SEQUENCE • ONE TARGET • ONE FUTURE
+SCOPE • NO PARALLEL PLANS

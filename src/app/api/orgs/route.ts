@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import crypto from "crypto";
 import { db } from "@/db/client";
-import { orgs } from "@/db/schema";
-import { eq } from "drizzle-orm";
+import { orgs, knowledgeChunks } from "@/db/schema";
+import { eq, count } from "drizzle-orm";
 import { getCurrentUserId } from "@/lib/auth";
 
 function slugify(name: string): string {
@@ -18,7 +18,9 @@ export async function GET() {
   if (!userId) return NextResponse.json({ error: "Not logged in" }, { status: 401 });
 
   const [org] = await db.select().from(orgs).where(eq(orgs.ownerUserId, userId));
-  return NextResponse.json({ org: org ?? null });
+  if (!org) return NextResponse.json({ org: null });
+  const [knowledge] = await db.select({ count: count() }).from(knowledgeChunks).where(eq(knowledgeChunks.orgId, org.id));
+  return NextResponse.json({ org: { ...org, knowledgeCount: knowledge.count } });
 }
 
 export async function POST(req: Request) {

@@ -12,6 +12,11 @@ export function SiteWidgetLoader() {
     setOrigin(window.location.origin);
   }, []);
 
+  useEffect(() => {
+    // Reposition the support launcher after client-side navigation to/from Chat.
+    window.dispatchEvent(new Event("resize"));
+  }, [pathname]);
+
   if (pathname?.startsWith("/embed")) return null;
   if (!origin) return null; // wait until we know our own origin (client-only, avoids SSR issues)
 

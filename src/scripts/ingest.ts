@@ -24,7 +24,7 @@ async function ingestFile(filePath: string, category: string, orgId: string) {
   const chunks = chunkMarkdown(text);
 
   for (const chunk of chunks) {
-    const embedding = await embedText(`${chunk.title}. ${chunk.content}`);
+    const embedding = await embedText(`${chunk.title}. ${chunk.content}`, { orgId, surface: "ingestion", task: "embedding" });
     await db.insert(knowledgeChunks).values({
       orgId,
       title: chunk.title,

@@ -1,7 +1,6 @@
 
 (function () {
   if (window.__hamroChatWidgetLoaded) return;
-  window.__hamroChatWidgetLoaded = true;
 
   var scriptTag = document.currentScript;
 
@@ -27,6 +26,7 @@
     return;
   }
 
+  window.__hamroChatWidgetLoaded = true;
   var scriptUrl = new URL(scriptTag.src);
   var ORIGIN = scriptUrl.origin;
 
@@ -44,6 +44,9 @@
   var widgetPosition = "bottom-right";
   var isLeft = false;
 
+  var sessionPosition = null;
+  var savedPosition = null;
+  var appearanceLoading = false;
   var isOpen = false;
   var expanded = false;
 
@@ -57,17 +60,11 @@
     height: 500,
   };
 
-  var CHAT_ICON =
-    '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-    '<path d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C10.6421 20 9.36313 19.6737 8.23367 19.0929L4 20L5.11616 16.6421C4.40806 15.4526 4 14.0781 4 12.6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>' +
-    '<circle cx="8.5" cy="12" r="1" fill="white"/>' +
-    '<circle cx="12" cy="12" r="1" fill="white"/>' +
-    '<circle cx="15.5" cy="12" r="1" fill="white"/>' +
-    "</svg>";
+  var CHAT_ICON = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M16 7V4M7 16H4M28 16h-3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="3" r="2" fill="currentColor"/><rect x="7" y="8" width="18" height="18" rx="7" stroke="currentColor" stroke-width="2.2"/><rect x="10" y="12" width="12" height="7" rx="3.5" fill="currentColor" fill-opacity=".2"/><path d="M12 15v2M20 15v2M13 22c2 1.5 4 1.5 6 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
 
   var CLOSE_ICON =
     '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-    '<path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2" stroke-linecap="round"/>' +
+    '<path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
     "</svg>";
 
   /*
@@ -75,9 +72,15 @@
    */
   var button = document.createElement("button");
 
+  button.type = "button";
   button.setAttribute("aria-label", "Open chat");
+  button.setAttribute("aria-expanded", "false");
 
   button.style.cssText = [
+    "all:initial",
+    "box-sizing:border-box",
+    "padding:0",
+    "color:white",
     "position:fixed",
     "width:56px",
     "height:56px",
@@ -102,6 +105,9 @@
    */
   var panel = document.createElement("div");
 
+  panel.style.cssText = "all:initial;box-sizing:border-box";
+  panel.id = "hamro-chat-panel";
+  button.setAttribute("aria-controls", panel.id);
   panel.style.display = "none";
   panel.style.position = "fixed";
   panel.style.zIndex = "2147483000";
@@ -141,7 +147,7 @@
   iframe.src = iframeSrc;
 
   iframe.style.cssText =
-    "width:100%;height:100%;border:none;display:block;";
+    "all:initial;width:100%;height:100%;border:none;display:block;";
 
   iframe.title = "Chat widget";
 
@@ -150,69 +156,43 @@
   /*
    * Position the launcher.
    */
-  function applyButtonPosition() {
-    button.style.left = "";
-    button.style.right = "";
-
-    if (isMobile()) {
-      button.style.bottom = "100px";
-
-      if (isLeft) {
-        button.style.left = "16px";
-      } else {
-        button.style.right = "16px";
-      }
-    } else {
-      button.style.bottom = "52px";
-
-      if (isLeft) {
-        button.style.left = "20px";
-      } else {
-        button.style.right = "20px";
-      }
-    }
+  function viewport() {
+    var v = window.visualViewport;
+    return { width: v ? v.width : window.innerWidth,
+      height: v ? v.height : window.innerHeight,
+      top: v ? v.offsetTop : 0, left: v ? v.offsetLeft : 0 };
   }
 
-  /*
-   * Position and size the chat panel.
-   */
+  function applyButtonPosition() {
+    var v = viewport();
+    button.style.bottom = "auto";
+    button.style.right = "auto";
+    button.style.top = Math.max(v.top + 8, v.top + v.height - 76 - composerInset()) + "px";
+    button.style.left = (isLeft ? v.left + 16 : v.left + v.width - 72) + "px";
+  }
+
+  function composerInset() {
+    return orgSlug === "hamrochatbot-support" && window.location.pathname.indexOf("/dashboard/chat") === 0 ? 72 : 0;
+  }
+
   function applyPanelLayout() {
-    panel.style.left = "";
-    panel.style.right = "";
-
-    if (isMobile()) {
-      panel.style.top = "";
-      panel.style.bottom = "170px";
-
-      if (isLeft) {
-        panel.style.left = "10px";
-      } else {
-        panel.style.right = "10px";
-      }
-
-      panel.style.width = "calc(100% - 20px)";
-      panel.style.height = "55vh";
-      panel.style.borderRadius = "16px";
-    } else {
-      var size = expanded ? EXPANDED : THIN;
-
-      panel.style.top = "";
-      panel.style.bottom = "110px";
-
-      if (isLeft) {
-        panel.style.left = "20px";
-      } else {
-        panel.style.right = "20px";
-      }
-
-      panel.style.width = size.width + "px";
-      panel.style.height = size.height + "px";
-      panel.style.borderRadius = "16px";
-    }
+    var v = viewport();
+    var size = expanded ? EXPANDED : THIN;
+    var width = Math.min(size.width, v.width - 24);
+    var height = Math.min(size.height, v.height - 100 - composerInset());
+    panel.style.bottom = "auto";
+    panel.style.right = "auto";
+    panel.style.top = Math.max(v.top + 12, v.top + v.height - 88 - composerInset() - height) + "px";
+    panel.style.left = (isLeft ? v.left + 12 : v.left + v.width - width - 12) + "px";
+    panel.style.width = width + "px";
+    panel.style.height = Math.max(0, height) + "px";
+    panel.style.borderRadius = "20px";
   }
 
   function openPanel() {
     isOpen = true;
+    button.setAttribute("aria-expanded", "true");
+    refreshAppearance();
 
     applyPanelLayout();
 
@@ -224,6 +204,8 @@
 
   function closePanel() {
     isOpen = false;
+    button.setAttribute("aria-expanded", "false");
+    button.focus();
 
     panel.style.display = "none";
 
@@ -236,18 +218,6 @@
       closePanel();
     } else {
       openPanel();
-    }
-  });
-
-  /*
-   * Keep the launcher/panel positioned correctly when the host
-   * page changes size.
-   */
-  window.addEventListener("resize", function () {
-    applyButtonPosition();
-
-    if (isOpen) {
-      applyPanelLayout();
     }
   });
 
@@ -320,6 +290,7 @@
         return;
       }
 
+      sessionPosition = nextPosition;
       widgetPosition = nextPosition;
       isLeft = widgetPosition === "bottom-left";
 
@@ -342,132 +313,79 @@
       event.data.type ===
       "easy-re-widget-request-appearance"
     ) {
-      iframe.contentWindow.postMessage(
-        {
-          type: "easy-re-widget-appearance",
-          position: widgetPosition,
-          color: widgetColor,
-        },
-        ORIGIN
-      );
+      sendAppearanceToIframe();
 
       return;
     }
   });
 
-  document.body.appendChild(panel);
-  document.body.appendChild(button);
+  // Isolate the embed from customer CSS (including button/svg !important rules).
+  var host = document.createElement("div");
+  host.style.cssText = "all:initial;position:static";
+  var root = host.attachShadow({ mode: "open" });
+  root.appendChild(panel);
+  root.appendChild(button);
+  function mount() { document.body.appendChild(host); refreshAppearance(); }
 
-  /*
-   * Send the current appearance to the iframe.
-   *
-   * This is called after the database API returns.
-   */
   function sendAppearanceToIframe() {
-    if (!iframe.contentWindow) {
-      return;
-    }
-
-    iframe.contentWindow.postMessage(
-      {
-        type: "easy-re-widget-appearance",
-        position: widgetPosition,
-        color: widgetColor,
-      },
-      ORIGIN
-    );
+    if (!iframe.contentWindow) return;
+    iframe.contentWindow.postMessage({ type: "easy-re-widget-appearance",
+      position: widgetPosition, color: widgetColor, isMobile: isMobile() }, ORIGIN);
   }
 
-  /*
-   * Fetch the organization's CURRENT saved appearance.
-   *
-   * This is the important part that removes the need to
-   * re-paste the embed script after changing settings.
-   */
-  fetch(
-    ORIGIN +
-      "/api/orgs/appearance?org=" +
-      encodeURIComponent(orgSlug) +
-      "&key=" +
-      encodeURIComponent(embedKey)
-  )
-    .then(function (res) {
-      if (!res.ok) {
-        throw new Error(
-          "Appearance request failed: " + res.status
-        );
-      }
+  function refreshAppearance() {
+    if (appearanceLoading) return;
+    appearanceLoading = true;
+    var controller = new AbortController();
+    var timeout = setTimeout(function () { controller.abort(); }, 8000);
+    fetch(ORIGIN + "/api/orgs/appearance?org=" + encodeURIComponent(orgSlug) +
+      "&key=" + encodeURIComponent(embedKey),
+      { cache: "no-store", credentials: "omit", signal: controller.signal })
+      .then(function (res) {
+        if (!res.ok) throw new Error("Appearance request failed: " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        if (/^#[0-9a-f]{6}$/i.test(data.widgetColor)) widgetColor = data.widgetColor;
+        if (data.widgetPosition === "bottom-left" || data.widgetPosition === "bottom-right") {
+          if (savedPosition !== null && savedPosition !== data.widgetPosition) sessionPosition = null;
+          savedPosition = data.widgetPosition;
+          widgetPosition = sessionPosition || savedPosition;
+        }
+      })
+      .catch(function (error) { console.warn("[widget] Keeping last appearance:", error); })
+      .finally(function () {
+        clearTimeout(timeout);
+        appearanceLoading = false;
+        isLeft = widgetPosition === "bottom-left";
+        button.style.background = widgetColor;
+        var rgb = widgetColor.slice(1).match(/.{2}/g).map(function (c) { return parseInt(c, 16); });
+        button.style.color = rgb[0] * .299 + rgb[1] * .587 + rgb[2] * .114 > 160 ? "#123A3E" : "#ffffff";
+        applyButtonPosition();
+        if (isOpen) applyPanelLayout();
+        sendAppearanceToIframe();
+        button.style.display = "flex";
+      });
+  }
 
-      return res.json();
-    })
-    .then(function (data) {
-      /*
-       * Color
-       */
-      if (
-        typeof data.widgetColor === "string" &&
-        data.widgetColor
-      ) {
-        widgetColor = data.widgetColor;
-      }
-
-      /*
-       * Position
-       */
-      if (
-        data.widgetPosition === "bottom-left" ||
-        data.widgetPosition === "bottom-right"
-      ) {
-        widgetPosition = data.widgetPosition;
-      } else {
-        widgetPosition = "bottom-right";
-      }
-
-      isLeft = widgetPosition === "bottom-left";
-
-      /*
-       * Apply saved appearance to launcher.
-       */
-      button.style.background = widgetColor;
-
-      applyButtonPosition();
-
-      /*
-       * Tell the iframe the same saved position.
-       */
-      sendAppearanceToIframe();
-
-      /*
-       * Now show the launcher.
-       *
-       * This prevents the user from seeing the default position/color
-       * for a moment before the database value arrives.
-       */
-      button.style.display = "flex";
-    })
-    .catch(function (error) {
-      console.error(
-        "[widget] Failed to load appearance:",
-        error
-      );
-
-      /*
-       * Safe fallback.
-       *
-       * If the API is unavailable, the widget still works using
-       * the default appearance.
-       */
-      widgetColor = "RGB(93,131,117)";
-      widgetPosition = "bottom-right";
-      isLeft = false;
-
-      button.style.background = widgetColor;
-
-      applyButtonPosition();
-
-      sendAppearanceToIframe();
-
-      button.style.display = "flex";
-    });
+  function resize() {
+    applyButtonPosition();
+    if (isOpen) applyPanelLayout();
+    sendAppearanceToIframe();
+  }
+  window.addEventListener("resize", resize);
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", resize);
+    window.visualViewport.addEventListener("scroll", resize);
+  }
+  window.addEventListener("focus", refreshAppearance);
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) refreshAppearance();
+  });
+  setInterval(function () { if (!document.hidden) refreshAppearance(); }, 30000);
+  window.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && isOpen) closePanel();
+  });
+  if (document.body) mount();
+  else document.addEventListener("DOMContentLoaded", mount, { once: true });
 })();
-

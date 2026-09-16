@@ -4,6 +4,7 @@ import { orgs, knowledgeChunks } from "@/db/schema";
 import { eq, and, or, ilike } from "drizzle-orm";
 import { getCurrentUserId } from "@/lib/auth";
 import { embedText } from "@/lib/gemini";
+import { knowledgeEntryError } from "@/lib/knowledgeValidation";
 
 async function getMyOrg(userId: string) {
   const [org] = await db.select().from(orgs).where(eq(orgs.ownerUserId, userId));
@@ -38,7 +39,6 @@ export async function GET(req: Request) {
   });
 }
 
-// POST stays exactly as it is — unchanged
 export async function POST(req: Request) {
   const userId = await getCurrentUserId();
   if (!userId) return NextResponse.json({ error: "Not logged in" }, { status: 401 });
@@ -47,6 +47,15 @@ export async function POST(req: Request) {
   if (!org) return NextResponse.json({ error: "No business found" }, { status: 404 });
 
   const { businessDescription, title, content } = await req.json();
+  const hasEntry = title !== undefined || content !== undefined;
+  if (hasEntry) {
+    const error = knowledgeEntryError(title, content);
+    if (error) return NextResponse.json({ error }, { status: 400 });
+  }
+  if (businessDescription !== undefined && (typeof businessDescription !== "string" || businessDescription.length > 2000)) {
+    return NextResponse.json({ error: "Business description must be text under 2,000 characters" }, { status: 400 });
+  }
+  if (!hasEntry && businessDescription === undefined) return NextResponse.json({ error: "Nothing to save" }, { status: 400 });
 
   if (typeof businessDescription === "string") {
     await db
@@ -55,13 +64,13 @@ export async function POST(req: Request) {
       .where(eq(orgs.id, org.id));
   }
 
-  if (title && content) {
-    const embedding = await embedText(`${title}. ${content}`);
+  if (hasEntry) {
+    const embedding = await embedText(`${title}. ${content}`, { orgId: org.id, userId, surface: "knowledge", task: "embedding" }, req.signal);
     await db.insert(knowledgeChunks).values({
       orgId: org.id,
-      title,
+      title: title.trim(),
       category: "manual",
-      content,
+      content: content.trim(),
       embedding,
     });
   }

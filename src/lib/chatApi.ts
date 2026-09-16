@@ -8,7 +8,6 @@ export type ApiUser = { id: string; email: string };
 
 async function json<T>(res: Response): Promise<T> {
   const text = await res.text();
-  console.log("[signup/login raw response]", res.status, text);
   const data = text ? JSON.parse(text) : {};
   if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
   return data;

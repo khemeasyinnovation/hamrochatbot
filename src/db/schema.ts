@@ -1,4 +1,4 @@
-import { pgTable, serial, text, integer, numeric, customType, uuid, timestamp, jsonb, boolean } from "drizzle-orm/pg-core";
+import { pgTable, serial, text, integer, numeric, customType, uuid, timestamp, jsonb, boolean, index, bigint } from "drizzle-orm/pg-core";
 
 const vector = customType<{ data: number[] }>({
   dataType() {
@@ -96,3 +96,27 @@ export const paymentTransactions = pgTable("payment_transactions", {
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").notNull().defaultNow(),
 });
+
+// Actual provider HTTP attempts. Missing usage is NULL, including incomplete requests.
+export const aiUsage = pgTable("ai_usage", {
+  id: uuid("id").primaryKey(),
+  orgId: uuid("org_id").references(() => orgs.id),
+  userId: uuid("user_id"),
+  sessionId: uuid("session_id"),
+  surface: text("surface").notNull(),
+  task: text("task").notNull(),
+  operation: text("operation").notNull(),
+  mode: text("mode").notNull().default("managed"),
+  provider: text("provider").notNull().default("google"),
+  model: text("model").notNull(),
+  requestCount: integer("request_count").notNull().default(1),
+  status: text("status").notNull().default("pending"),
+  httpStatus: integer("http_status"),
+  tokensIn: bigint("tokens_in", { mode: "number" }),
+  tokensOut: bigint("tokens_out", { mode: "number" }),
+  tokensTotal: bigint("tokens_total", { mode: "number" }),
+  tokensCached: bigint("tokens_cached", { mode: "number" }),
+  tokensReasoning: bigint("tokens_reasoning", { mode: "number" }),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  completedAt: timestamp("completed_at", { withTimezone: true }),
+}, table => [index("ai_usage_org_created_idx").on(table.orgId, table.createdAt), index("ai_usage_user_created_idx").on(table.userId, table.createdAt)]);

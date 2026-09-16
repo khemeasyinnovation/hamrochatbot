@@ -14,6 +14,7 @@ export async function POST() {
 
   const [org] = await db.select().from(orgs).where(eq(orgs.ownerUserId, userId));
   if (!org) return NextResponse.json({ error: "No business found" }, { status: 404 });
+  if (org.isPaid) return NextResponse.json({ error: "Your widget is already activated" }, { status: 409 });
 
   // eSewa requires transaction_uuid to be unique and alphanumeric/hyphen only.
   const transactionUuid = `${org.id}-${Date.now()}`;

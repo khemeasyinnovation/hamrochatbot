@@ -37,7 +37,7 @@ export function DashboardChatView() {
           Loading chat...
         </div>
       ) : currentSessionId ? (
-        <ChatPanel key={currentSessionId} initialMessages={currentMessages} onTurnComplete={turnComplete} />
+        <ChatPanel key={currentSessionId} sessionId={currentSessionId} initialMessages={currentMessages} onTurnComplete={turnComplete} />
       ) : (
         <div className="flex-1 flex items-center justify-center bg-[#EEF2F0] text-slate-400 text-sm">
           Setting up your chat...

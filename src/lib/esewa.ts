@@ -18,18 +18,12 @@ export function generateEsewaSignature(
   transactionUuid: string,
   productCode: string,
 ): string {
-  console.log("SECRET:", ESEWA_SECRET_KEY);
-  console.log("PRODUCT:", ESEWA_PRODUCT_CODE);
-
   const message = `total_amount=${totalAmount},transaction_uuid=${transactionUuid},product_code=${productCode}`;
 
   const hmac = crypto.createHmac("sha256", ESEWA_SECRET_KEY);
   hmac.update(message);
 
   const signature = hmac.digest("base64");
-
-  console.log("MESSAGE:", message);
-  console.log("SIGNATURE:", signature);
 
   return signature;
 }
@@ -40,9 +34,11 @@ export function generateEsewaSignature(
  * we rebuild the same message and compare.
  */
 export function verifyEsewaSignature(payload: Record<string, string>): boolean {
-  if (!payload.signed_field_names || !payload.signature) return false;
+  if (typeof payload.signed_field_names !== "string" || typeof payload.signature !== "string") return false;
 
   const fieldNames = payload.signed_field_names.split(",");
+  if (!["transaction_uuid", "total_amount", "product_code", "status"].every(field => fieldNames.includes(field))) return false;
+  if (fieldNames.some(field => typeof payload[field] !== "string")) return false;
   const message = fieldNames.map((f) => `${f}=${payload[f]}`).join(",");
 
   const hmac = crypto.createHmac("sha256", ESEWA_SECRET_KEY);
@@ -71,6 +67,7 @@ export async function checkEsewaStatus(
   )}&total_amount=${encodeURIComponent(totalAmount)}&transaction_uuid=${encodeURIComponent(
     transactionUuid,
   )}`;
-  const res = await fetch(url);
+  const res = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(15000) });
+  if (!res.ok) throw new Error("Payment verification unavailable");
   return res.json();
 }

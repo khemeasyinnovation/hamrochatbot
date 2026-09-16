@@ -3,6 +3,7 @@ import { db } from "@/db/client";
 import { orgs } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { EmbedChatWidget } from "@/components/chat/EmbedChatWidget";
+import { widgetAccessError } from "@/lib/widgetAccess";
 
 function extractHostname(url: string | null): string | null {
   if (!url) return null;
@@ -47,10 +48,14 @@ export default async function EmbedPage({
     );
   }
 
-  if (!embedKey || embedKey !== org.embedKey) {
+  const accessError = widgetAccessError(org, embedKey);
+  if (accessError) {
     return (
       <Shell>
-        <div className="p-4 text-sm text-red-500">Invalid or missing embed key.</div>
+        <div role="alert" className="m-4 rounded-xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700">
+          <h1 className="mb-2 font-semibold text-[#123A3E]">Chat unavailable</h1>
+          {accessError.error}
+        </div>
       </Shell>
     );
   }

@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, type CSSProperties } from "react";
 import { ChatPanel } from "./ChatPanel";
 import { WidgetTopBar } from "./WidgetTopBar";
 import { WidgetHistoryPanel } from "./WidgetHistoryPanel";
@@ -30,6 +30,8 @@ export function EmbedChatWidget({
   isMobileHost?: boolean;
   hostPath?: string | null;
 }) {
+  const [color, setColor] = useState("#123A3E");
+  const [mobile, setMobile] = useState(!!isMobileHost);
   const hasIdentity = !!explicitVisitorId;
 
   const [visitorKey, setVisitorKey] = useState<string | null>(null);
@@ -63,7 +65,11 @@ export function EmbedChatWidget({
     function handleParentMessage(event: MessageEvent) {
       const data = event.data;
 
-      if (!data || typeof data !== "object") return;
+      if (event.source !== window.parent || !data || typeof data !== "object") return;
+      if (data.type === "easy-re-widget-appearance") {
+        if (typeof data.color === "string" && /^#[0-9a-f]{6}$/i.test(data.color)) setColor(data.color);
+        if (typeof data.isMobile === "boolean") setMobile(data.isMobile);
+      }
 
       if (
         data.type === "easy-re-widget-appearance" &&
@@ -74,6 +80,10 @@ export function EmbedChatWidget({
       }
     }
 
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") window.parent.postMessage({ type: "easy-re-widget-close" }, "*");
+    }
+    window.addEventListener("keydown", handleEscape);
     window.addEventListener("message", handleParentMessage);
 
     // Ask widget.js to send us its current configuration.
@@ -85,6 +95,7 @@ export function EmbedChatWidget({
     );
 
     return () => {
+      window.removeEventListener("keydown", handleEscape);
       window.removeEventListener("message", handleParentMessage);
     };
   }, []);
@@ -127,11 +138,13 @@ export function EmbedChatWidget({
           );
 
           list.unshift(active);
+          setInitialMessages([]);
+          setCurrentSessionId(active.id);
+        } else {
+          await loadSessionMessages(active.id);
         }
 
         setSessions(list);
-
-        await loadSessionMessages(active.id);
 
         setReady(true);
       } catch (err: any) {
@@ -251,9 +264,9 @@ export function EmbedChatWidget({
   }
 
   return (
-    <div className="flex flex-col h-full relative">
+    <div className="flex flex-col h-full min-h-0 min-w-0 relative" style={{ "--widget-color": color, "--widget-foreground": parseInt(color.slice(1, 3), 16) * .299 + parseInt(color.slice(3, 5), 16) * .587 + parseInt(color.slice(5, 7), 16) * .114 > 160 ? "#123A3E" : "#ffffff" } as CSSProperties}>
       <WidgetTopBar
-        showExpandToggle={!isMobileHost}
+        showExpandToggle={!mobile}
         expanded={expanded}
         onToggleExpand={toggleExpand}
         showHistoryToggle={hasIdentity}
@@ -275,6 +288,8 @@ export function EmbedChatWidget({
 
       <ChatPanel
         key={currentSessionId}
+        sessionId={currentSessionId}
+        visitorKey={visitorKey}
         initialMessages={initialMessages}
         onTurnComplete={handleTurnComplete}
         orgSlug={orgSlug}

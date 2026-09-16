@@ -10,7 +10,7 @@ import {
 import { ConfirmDialog } from "@/components/chat/ConfirmDialog";
 
 const NAV_ITEMS = [
-  { href: "/dashboard/widget", label: "Widget Setup" },
+  { href: "/dashboard/widget", label: "Widget Overview" },
   { href: "/dashboard/knowledge-base", label: "Knowledge Base" },
   { href: "/dashboard/payment", label: "Payment" },
 ];
@@ -79,7 +79,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
         </div>
         <div className="h-px bg-gradient-to-r from-white/30 to-transparent" />
 
-        <nav className="flex-1 px-2 py-4 space-y-1">
+        <nav className="flex-1 min-h-0 overflow-y-auto px-2 py-4 space-y-1">
           {/* Chat — floating popup instead of inline-expanding list */}
           <div className="relative">
             <div
@@ -88,13 +88,18 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
                   ? "bg-white/10 text-white font-medium"
                   : "text-slate-300 hover:bg-white/5 hover:text-white"
               }`}
-              onClick={() => {
-                router.push("/dashboard/chat");
-                setChatHistoryOpen(false);
-                onClose();
-              }}
             >
-              <span>Chat</span>
+              <Link
+                href="/dashboard/chat"
+                prefetch={true}
+                className="flex-1 py-1"
+                onClick={() => {
+                  setChatHistoryOpen(false);
+                  onClose();
+                }}
+              >
+                Chat
+              </Link>
               <div className="flex items-center gap-0.5">
                 <button
                   type="button"
@@ -104,7 +109,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
                   }}
                   title="New chat"
                   aria-label="New chat"
-                  className="w-6 h-6 flex items-center justify-center rounded-md text-slate-300 hover:text-white hover:bg-white/10 transition-colors text-base leading-none"
+                  className="w-9 h-9 flex items-center justify-center rounded-md text-slate-300 hover:text-white hover:bg-white/10 transition-colors text-base leading-none"
                 >
                   +
                 </button>
@@ -116,7 +121,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
                   }}
                   title="Chat history"
                   aria-label="Chat history"
-                  className="w-6 h-6 flex items-center justify-center rounded-md text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+                  className="w-9 h-9 flex items-center justify-center rounded-md text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
                 >
                   <span
                     className={`inline-block text-[10px] transition-transform ${chatHistoryOpen ? "rotate-180" : ""}`}
@@ -128,7 +133,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
             </div>
 
             {chatHistoryOpen && (
-              <div className="absolute left-1/2 top-10 ml-2 w-48 z-50">
+              <div className="absolute left-0 right-0 top-12 z-50">
                 <div className="bg-[#123A3E]/70  border border-white/10 rounded-xl shadow-2xl overflow-hidden">
                   <div className="px-3 py-2.5 border-b border-white/10 flex items-center justify-between">
                     <p className="text-[11px] text-slate-300">
@@ -153,7 +158,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
                     </button>
                   </div>
 
-                  <div className="max-h-[380px] overflow-y-auto p-1.5">
+                  <div className="max-h-[min(380px,50dvh)] overflow-y-auto p-1.5">
                     {sessions.length === 0 ? (
                       <p className="text-slate-400 text-xs px-2 py-3 text-center">
                         No past chats yet.
@@ -177,7 +182,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
                                 e.stopPropagation();
                                 setPendingDeleteId(s.id);
                               }}
-                              className="opacity-0 group-hover:opacity-100 hover:text-red-400 shrink-0 transition-opacity"
+                              className="opacity-100 md:opacity-0 group-hover:opacity-100 focus-visible:opacity-100 hover:text-red-400 shrink-0 transition-opacity"
                               title="Delete chat"
                             >
                               ✕
@@ -273,10 +278,10 @@ export default function DashboardLayout({
 
   return (
     <DashboardChatProvider>
-      <div className="h-screen flex flex-col md:flex-row bg-[#EEF2F0] overflow-hidden">
+      <div className="h-dvh flex flex-col md:flex-row bg-[#EEF2F0] overflow-hidden">
         <MobileTopBar onOpenSidebar={() => setSidebarOpen(true)} />
         <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-        <main className="flex-1 min-w-0 overflow-y-auto relative">
+        <main className="flex-1 min-h-0 min-w-0 overflow-y-auto relative">
           {children}
         </main>
       </div>

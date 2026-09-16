@@ -4,6 +4,7 @@ import { orgs, knowledgeChunks } from "@/db/schema";
 import { eq, and } from "drizzle-orm";
 import { getCurrentUserId } from "@/lib/auth";
 import { embedText } from "@/lib/gemini";
+import { knowledgeEntryError } from "@/lib/knowledgeValidation";
 
 async function getMyOrg(userId: string) {
   const [org] = await db.select().from(orgs).where(eq(orgs.ownerUserId, userId));
@@ -27,12 +28,14 @@ export async function PATCH(
   }
 
   const { title, content } = await req.json();
-  if (!title?.trim() || !content?.trim()) {
-    return NextResponse.json({ error: "Title and content required" }, { status: 400 });
-  }
+  const error = knowledgeEntryError(title, content);
+  if (error) return NextResponse.json({ error }, { status: 400 });
+  const [existing] = await db.select({ id: knowledgeChunks.id }).from(knowledgeChunks)
+    .where(and(eq(knowledgeChunks.id, chunkId), eq(knowledgeChunks.orgId, org.id)));
+  if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
 
   // Re-embed since the content changed — the embedding is derived from title+content
-  const embedding = await embedText(`${title}. ${content}`);
+  const embedding = await embedText(`${title}. ${content}`, { orgId: org.id, userId, surface: "knowledge", task: "embedding" }, req.signal);
 
   const result = await db
     .update(knowledgeChunks)
