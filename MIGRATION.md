@@ -2,7 +2,81 @@
 
 Reference: HamRobot Master Architecture and Implementation Guide v3, sections 14-16.
 
-## Current checkpoint - 2026-09-16
+## Current checkpoint - P4 usage recording - 2026-09-16
+
+### Implemented and applied
+
+- Added `ai_usage` to the existing schema and applied
+  `drizzle/0001_ai_usage.sql` to the configured database. Only the new table and
+  its indexes were created; RLS is enabled with no browser-facing policies.
+  Existing orgs, Knowledge, and payment records were not changed.
+- Every provider HTTP attempt starts with a durable pending row. Generation,
+  embeddings, model probes, SDK retries, HTTP/network failures, cancellation,
+  and truncated streams are separately attributable. Deterministic responses
+  still make no provider call and create no usage row.
+- Captured provider-reported input/output/total/cached/reasoning counts. Missing
+  fields stay NULL. Cumulative streaming metadata is not added repeatedly.
+  Total is the reported total, not an invented input/output sum.
+- Every embedding caller now supplies trusted org/owner context: Chat/Widget,
+  Knowledge add/edit, ingestion, and seed scripts. Owner Chat before business
+  creation is attributed by user ID. The visitor identifier is not persisted.
+- Embedding uses the same Google SDK provider boundary and `embedContent` model,
+  explicitly preserving 3,072 dimensions. Gemini embedding responses currently
+  provide no token count; record a completed request with unknown token usage.
+- Added owner-only `GET /api/orgs/usage`: last 30 days, grouped by surface,
+  operation and status; known totals and unknown request counts remain separate.
+  Scope comes from authentication, not caller-provided org/user IDs. No raw
+  prompts, replies, headers, provider keys, or credentials are stored in the ledger.
+- Shared model discovery attributes its actual probes to the initiating request,
+  not every waiting request. Cache hits create no probe usage.
+- The gateway refuses new provider requests when initial ledger insertion fails.
+  If finalization fails after provider work, it logs only the request UUID and
+  leaves the durable row pending. Pending means unresolved, not free/zero usage.
+
+### Live verification
+
+- Read-only audit: **5 orgs**, **3 paid orgs**, **19 Knowledge entries**, **0 missing
+  embeddings**, **3 completed payment records**. `hamrochatbot-support` is paid.
+- Migration succeeded: usage table, indexes, and RLS created.
+- One real Gemini embedding smoke check succeeded: **3,072 dimensions**, **one
+  completed usage row**, correctly attributed to support, token usage **unknown**.
+  This is real provider work, not a synthetic ledger entry; it is tagged ingestion.
+- The check did not insert Knowledge, change activation, or initiate a payment.
+- A fresh signed-in Knowledge CRUD flow and eSewa sandbox payment roundtrip are
+  still pending; existing confirmed database state does not establish those tests.
+
+### Validation and operations
+
+- Automated suites include gateway/provider HTTP fixtures, actual SDK retries,
+  concurrent probe attribution, stream cancellation/truncation, ledger failures,
+  numeric usage validation, and usage API tenant isolation.
+- Migration command: `node scripts/apply-usage-migration.cjs --apply`.
+  Without `--apply` it inspects only. Re-running recognizes the schema fingerprint
+  and makes no changes; an unrecognized existing table stops the migration.
+- Live schema check: `node --import tsx src/scripts/check-ai-usage.ts`.
+  Add `--provider-call` only to intentionally make one real embedding request.
+- Deployment must include the schema before the gateway code. The configured
+  database is migrated, but no application deployment was performed here.
+- The former default TypeScript ambient-package issue remains; validation uses
+  `tsc --noEmit --types node,react,react-dom` plus regenerated Next route types.
+
+### Next: P5 before BYOK
+
+1. Build Usage UI that shows known consumption, unknown usage, and unresolved
+   pending requests without portraying them as zero.
+2. Define included allowances and a concurrency-safe reservation/settlement policy.
+   Unknown embedding usage and stale pending requests need an explicit policy;
+   there is not enough reported data to silently treat them as billable tokens.
+3. Add exhaustion/recovery behavior and test parallel requests, cancellation,
+   failed final writes, and reconciliation. No allowance is enforced yet.
+4. Then implement optional premium BYOK: server-side validation, encryption,
+   replace/revoke, provider routing, and entitlements. BYOK remains unimplemented.
+
+The remaining usage/allowance + BYOK estimate is **3-6 focused working days** from
+the guide (P5: 1-2; P6: 2-4), after resolving the live regression and accounting
+policy gates. This is a planning range, not a delivery promise.
+
+## Previous checkpoint - setup, payment and P1 - 2026-09-16
 
 The user explicitly prioritized Knowledge/setup and the pending payment boundary.
 That reconciles advancing P2 and the P3 setup UI alongside the remaining P1 work;

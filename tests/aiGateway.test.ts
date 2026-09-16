@@ -81,6 +81,33 @@ test("fallback is cached for 30 minutes, then probed again", async () => {
   assert.deepEqual(calls, ["primary", "fallback", "primary", "fallback"]);
 });
 
+test("SDK retries and shared discovery charge only the initiating request context", async () => {
+  const previousKey = process.env.GEMINI_API_KEY;
+  const previousFetch = globalThis.fetch;
+  process.env.GEMINI_API_KEY = "test-managed-key";
+  const starts: UsageStart[] = [];
+  const finishes: UsageFinish[] = [];
+  const gateway = createAIGateway({ async start(value) { starts.push(value); }, async finish(_id, value) { finishes.push(value); } });
+  let calls = 0;
+  globalThis.fetch = async () => {
+    if (++calls === 1) return Response.json({ error: { code: 503, message: "Unavailable", status: "UNAVAILABLE" } }, { status: 503 });
+    return Response.json({ candidates: [{ content: { role: "model", parts: [{ text: "pong" }] }, finishReason: "STOP" }], usageMetadata: { promptTokenCount: 1, candidatesTokenCount: 1, totalTokenCount: 2 } });
+  };
+  try {
+    const base = { surface: "chat" as const, task: "generation" as const, sessionId: "session-id" };
+    await Promise.all([gateway.resolveProvider({ ...base, orgId: "org-a" }), gateway.resolveProvider({ ...base, orgId: "org-b" })]);
+    assert.equal(calls, 2);
+    assert.equal(starts.length, 2);
+    assert.equal(new Set(starts.map(value => value.id)).size, 2);
+    assert.ok(starts.every(value => value.context.orgId === "org-a" && value.operation === "probe"));
+    assert.deepEqual(finishes.map(value => value.status), ["failed", "succeeded"]);
+  } finally {
+    globalThis.fetch = previousFetch;
+    if (previousKey === undefined) delete process.env.GEMINI_API_KEY;
+    else process.env.GEMINI_API_KEY = previousKey;
+  }
+});
+
 test("concurrent requests share probes", async () => {
   let calls = 0;
   const resolver = createModelResolver({ candidates: ["primary"], probe: async () => { calls++; } });

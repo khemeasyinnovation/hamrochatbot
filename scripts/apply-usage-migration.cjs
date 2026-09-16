@@ -4,7 +4,7 @@ const { Pool } = require('pg');
 const { readFileSync } = require('node:fs');
 const { createHash } = require('node:crypto');
 const path = require('node:path');
-const sql = readFileSync(path.join(__dirname, '../drizzle/0001_ai_usage.sql'), 'utf8');
+const sql = readFileSync(path.join(__dirname, '../drizzle/0001_ai_usage.sql'), 'utf8').replace(/\r\n/g, '\n');
 const marker = 'hamrobot-ai-usage-v1:' + createHash('sha256').update(sql).digest('hex');
 if (process.argv.slice(2).some(arg => arg !== '--apply')) throw Error('Only --apply is supported');
 const apply = process.argv.includes('--apply');
