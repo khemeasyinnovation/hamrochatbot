@@ -104,7 +104,7 @@ export default function PaymentContent() {
       </div>
       {error && <p className="text-red-500 text-xs mt-2">{error}</p>}
       <p className="text-xs text-slate-400 mt-4">
-        Sandbox test login — eSewa ID <code>9806800001</code>, password{" "}
+        Sandbox test login — eSewa ID <code>9806800005</code>, password{" "}
         <code>Nepal@123</code>, OTP token <code>123456</code>.
       </p>
     </div>

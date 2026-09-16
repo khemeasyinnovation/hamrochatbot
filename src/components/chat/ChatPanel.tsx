@@ -117,7 +117,7 @@ export function ChatPanel({
         <div ref={contentRef} className="mx-auto w-full max-w-3xl space-y-4">
           {messages.length === 0 && (
             <div className="mx-auto max-w-md py-12 text-center">
-              <h2 className="text-xl font-semibold text-[#123A3E]">{orgSlug ? "How can we help?" : "What would you like to work on?"}</h2>
+              <h2 className="text-xl font-semibold text-[#123A3E]">{orgSlug ? "Want your own AI assistant?" : "Ask for more info?"}</h2>
               <p className="mt-3 text-sm leading-6 text-slate-500">{orgSlug ? "Ask a question about this business." : "Ask a question, draft a reply, or explore your business knowledge."}</p>
             </div>
           )}
